@@ -18,6 +18,7 @@ const CustomCursor = () => {
 
   return (
     <div
+      className="hidden sm:fixed"
       style={{
         position: "fixed",
         top: position.y,
