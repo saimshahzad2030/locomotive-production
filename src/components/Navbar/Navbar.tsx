@@ -66,9 +66,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 w-full z-0">
+    <div className={`fixed top-0 w-full z-50 bg-white`}>
       <div
-        className={`px-8 w-full relative flex flex-row items-center md:justify-center justify-between py-4 border-b-black border-b-[1px] z-0`}
+        className={`px-8 w-full relative flex flex-row items-center md:justify-center justify-between py-4 border-b-black border-b-[0.5px] z-0`}
       >
         <div className=" flex flex-row items-center ">
           <img
@@ -109,7 +109,7 @@ const Navbar = () => {
             <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
           </Link>
         </div>
-        <div className="md:hidden  flex items-center">
+        <div className="md:hidden  flex items-center mr-4">
           <button
             onClick={toggleMenu}
             className="text-black focus:outline-none"
@@ -153,9 +153,9 @@ const Navbar = () => {
               <path
                 d="M19 5L5 19M5.00001 5L19 19"
                 stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>

@@ -3,8 +3,8 @@ import React from "react";
 
 const LandingHome = () => {
   return (
-    <div className="fixed top-[28px] left-0 w-full h-screen flex flex-col items-center justify-center z-0">
-      <div className="flex flex-row items-center justify-between  px-8  ">
+    <div className="fixed top-[28px] left-0 w-full max-h-screen flex flex-col items-center justify-center z-0  ">
+      <div className="flex flex-row items-center justify-between  px-8   h-screen ">
         <div className="flex flex-col items-start w-6/12">
           <h1
             className={`font-semibold text-[30px] sm:text-[30px] md:text-[40px] lg:text-[60px] xl:text-[70px] 2xl:text-[80px] leading-[30px] sm:leading-[30px] md:leading-[40px] lg:leading-[60px] xl:leading-[70px] 2xl:leading-[80px] ${playfairDisplay.className} uppercase`}

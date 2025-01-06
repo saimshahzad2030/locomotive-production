@@ -9,11 +9,7 @@ export default function Home() {
     <div className="relative w-full">
       <Navbar />
       <LandingHome />
-      <div className="relative z-10">
-        <AboutHome />
-        <WhyUsHome />
-        <Footer />
-      </div>
+      <AboutHome />
     </div>
   );
 }
