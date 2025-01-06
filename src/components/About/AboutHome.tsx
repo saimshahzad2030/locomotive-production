@@ -177,16 +177,16 @@ const AboutHome = () => {
         </div>
         <div className="pt-8 flex xl:flex-row flex-col justify-between  ">
           <img
-            className="w-11/12 sm:w-9/12 xl:w-7/12 h-auto"
+            className="w-full sm:w-9/12 xl:w-7/12 h-auto"
             src="/assets/AboutSection-bg-image.png"
             alt="about Bg"
           />
           <div
             className={`flex flex-col items-center justify-end p-4 relative  ${playfairDisplay.className}`}
           >
-            <div className=" absolute bottom-[280px] sm:bottom-[320px] md:bottom-[320px] right-[14%] sm:right-[20%] xl:top-[10px] xl:left-[-190px] h-24 w-24 sm:h-40 md:h-52 lg:h-60 sm:w-40 md:w-52 lg:w-60 bg-white rounded-full flex flex-col items-center justify-center z-[100]">
+            <div className=" absolute bottom-[280px] sm:bottom-[320px] md:bottom-[320px] right-[14%] sm:right-[20%] xl:top-[10px] xl:left-[-190px] h-24 w-24 sm:h-40 md:h-52 lg:h-60 sm:w-40 md:w-52 lg:w-60 bg-white rounded-full flex flex-col items-center justify-center  ">
               <div className="relative text-[20px] sm:text-[25px] md:text-[35px] lg:text-[50px] flex flex-row items-center justify-center">
-                <h1 className="uppercase font-bold ml-12 absolute right-[-132px] sm:right-[-182px] md:right-[-235px] lg:right-[-270px] min-w-[150px] sm:min-w-[180px] md:min-w-[250px] lg:min-w-[310px] leading-[25px] sm:leading-[30px] md:leading-[50px]">
+                <h1 className="uppercase font-bold ml-12 absolute right-[-110px] sm:right-[-182px] md:right-[-235px] lg:right-[-270px] min-w-[130px] sm:min-w-[180px] md:min-w-[250px] lg:min-w-[310px] leading-[25px] sm:leading-[30px] md:leading-[50px]">
                   <span className="text-black">More</span>
                   <span className="text-white"> than </span>Just a{" "}
                   <span className="text-[25px] sm:text-[30px] md:text-[40px] lg:text-[60px]">

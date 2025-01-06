@@ -1,58 +1,3 @@
-// "use client";
-// import { jomolhari } from "@/utils/fonts";
-// import Link from "next/link";
-// import React from "react";
-
-// const Navbar = () => {
-//   return (
-//     <div className="fixed top-0 w-full  ">
-//       <div className=" px-8 w-full relative flex flex-row items-center justify-center py-4 border-b-black border-b-[1px] z-0">
-//         <div className="absolute left-8 flex flex-row items-center ">
-//           <img
-//             className="h-12 w-auto drop-shadow-[0_4px_2px_rgba(0,0,0,0.5)]"
-//             src="/assets/logo-nav.png"
-//             alt="logo"
-//           />
-//         </div>
-//         <div
-//           className={`font-text-[14px] flex flex-row items-center justify-evenly w-5/12 ${jomolhari.className}`}
-//         >
-//           <Link
-//             href={"/"}
-//             className="relative group text-gray-800 hover:text-[#ffb41c] hover:font-bold transition-all ease-in-out duration-300"
-//           >
-//             Home
-//             <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-//           </Link>
-//           <Link
-//             href={"/"}
-//             className="relative group text-gray-800 hover:text-[#ffb41c] hover:font-bold transition-all ease-in-out duration-300"
-//           >
-//             About
-//             <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-//           </Link>
-//           <Link
-//             href={"/"}
-//             className="relative group text-gray-800 hover:text-[#ffb41c] hover:font-bold transition-all ease-in-out duration-300"
-//           >
-//             Films
-//             <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-//           </Link>
-//           <Link
-//             href={"/"}
-//             className="relative group text-gray-800 hover:text-[#ffb41c] hover:font-bold transition-all ease-in-out duration-300"
-//           >
-//             Contact Us
-//             <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-//           </Link>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
-
 "use client";
 import { jomolhari } from "@/utils/fonts";
 import Link from "next/link";
@@ -68,7 +13,7 @@ const Navbar = () => {
   return (
     <div className={`fixed top-0 w-full z-50 bg-white`}>
       <div
-        className={`px-8 w-full relative flex flex-row items-center md:justify-center justify-between py-4 border-b-black border-b-[0.5px] z-0`}
+        className={`px-8 w-full relative flex flex-row items-center md:justify-center justify-between py-4 border-b-black border-b-[0.5px]  `}
       >
         <div className=" flex flex-row items-center ">
           <img
@@ -78,7 +23,7 @@ const Navbar = () => {
           />
         </div>
         <div
-          className={`font-text-[14px] hidden md:flex flex-row items-center justify-evenly w-5/12 ${jomolhari.className}`}
+          className={`text-[14px] hidden md:flex flex-row items-center justify-evenly w-5/12 ${jomolhari.className}`}
         >
           <Link
             href={"/"}
