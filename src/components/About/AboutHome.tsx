@@ -137,8 +137,14 @@ import WhyUsHome from "../WhyUs/WhyUsHome";
 const AboutHome = () => {
   return (
     <div className="z-10 flex flex-col items-center w-full">
-      <div className="py-8  flex flex-col items-center justify-center px-8 bg-black absolute top-[100vh]">
-        <div className="flex flex-col items-center w-full mb-8">
+      <div
+        className="py-8  flex flex-col items-center justify-center px-8 bg-black absolute top-[100vh]"
+        data-aos="fade-up"
+      >
+        <div
+          className="flex flex-col items-center w-full mb-8"
+          data-aos="fade-up"
+        >
           <div
             className={` sm:hidden flex flex-col items-center   leading-[40px]  font-bold text-[40px]   text-white ${playfairDisplay.className} w-4/12`}
           >
@@ -147,7 +153,10 @@ const AboutHome = () => {
             <h1 className={`  opacity-25`}>ABOUT</h1>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-between">
+        <div
+          className="flex flex-row items-center justify-between mt-8"
+          data-aos="fade-up"
+        >
           <div
             className={`hidden sm:flex flex-col items-start sm:leading-[50px] sm:text-[55px] md:leading-[60px] md:text-[60px] lg:leading-[85px] xl:leading-[100px]  font-bold lg:text-[90px] xl:text-[110px] text-white ${playfairDisplay.className} w-4/12`}
           >
@@ -175,7 +184,10 @@ const AboutHome = () => {
             className="w-6/12 sm:w-4/12 h-auto"
           />
         </div>
-        <div className="pt-8 flex xl:flex-row flex-col justify-between  ">
+        <div
+          className="pt-8 flex xl:flex-row flex-col justify-between mt-8 "
+          data-aos="fade-up"
+        >
           <img
             className="w-full sm:w-9/12 xl:w-7/12 h-auto"
             src="/assets/AboutSection-bg-image.png"
@@ -207,7 +219,10 @@ const AboutHome = () => {
             </p>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col items-center justify-between">
+        <div
+          className="flex lg:flex-row flex-col items-center justify-between mt-8"
+          data-aos="fade-up"
+        >
           <div className="w-full  rounded-md   lg:hidden flex flex-col items-center justify-center bg-white">
             <h1 className="uppercase text-center font-bold text-[30px] sm:text-[70px] text-black leading-[40px] sm:leading-[70px] py-4">
               Setting <br />a New <br />

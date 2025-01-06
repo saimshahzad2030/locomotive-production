@@ -4,8 +4,9 @@ import React from "react";
 const WhyUsHome = () => {
   return (
     <div
+      data-aos="fade-up"
       style={{ backgroundImage: "url(/assets/WhyUsHomeBg.png)" }}
-      className="flex flex-col items-center justify-between w-full h-[100vh] bg-cover bg-center  lg:p-8 py-2"
+      className="flex flex-col items-center justify-between w-full h-[100vh] bg-cover bg-center  lg:p-8 py-2 mt-8"
     >
       <div className="flex flex-col items-start w-full px-4 lg:p-0">
         <h1
