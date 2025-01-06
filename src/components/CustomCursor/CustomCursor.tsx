@@ -3,8 +3,25 @@ import React, { useEffect, useState } from "react";
 
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
+    // Check if the screen is small
+    const updateScreenSize = () => {
+      setIsSmallScreen(window.innerWidth <= 768); // Adjust breakpoint as needed
+    };
+
+    updateScreenSize(); // Set the initial state
+    window.addEventListener("resize", updateScreenSize);
+
+    return () => {
+      window.removeEventListener("resize", updateScreenSize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isSmallScreen) return;
+
     const handleMouseMove = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
@@ -14,7 +31,11 @@ const CustomCursor = () => {
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []);
+  }, [isSmallScreen]);
+
+  if (isSmallScreen) {
+    return null; // Do not render the custom cursor on small screens
+  }
 
   return (
     <div
