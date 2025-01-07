@@ -34,6 +34,8 @@ export default function RootLayout({
   }, []);
   return (
     <html lang="en">
+      <title>Locomotive</title>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
