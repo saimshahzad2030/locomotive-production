@@ -1,63 +1,73 @@
 "use client";
 import { jomolhari } from "@/utils/fonts";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className={`fixed top-0 w-full z-50 bg-white`}>
+    <div
+      className={`fixed top-0 w-full z-50 transition-colors duration-500 ${
+        isScrolled ? "bg-black" : "bg-white"
+      }`}
+    >
       <div
-        className={`px-8 w-full relative flex flex-row items-center md:justify-center justify-between py-4 border-b-black border-b-[0.5px]  `}
+        className={`px-8 w-full relative flex flex-row items-center md:justify-center justify-between py-4 ${
+          isScrolled ? "border-b-white" : "border-b-black"
+        }  border-b-[0.5px]`}
       >
-        <div className=" flex flex-row items-center ">
+        <div className="flex flex-row items-center">
           <img
-            className="absolute left-8 h-12 w-auto drop-shadow-[0_4px_2px_rgba(0,0,0,0.5)]"
+            className="absolute left-8 h-12  4xl:h-16 w-auto drop-shadow-[0_4px_2px_rgba(0,0,0,0.5)]"
             src="/assets/logo-nav.png"
             alt="logo"
           />
         </div>
         <div
-          className={`text-[14px] hidden md:flex flex-row items-center justify-evenly w-5/12 ${jomolhari.className}`}
+          className={`text-[14px] hidden md:flex flex-row items-center justify-evenly w-5/12 ${jomolhari.className} lg:text-[16px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[40px]`}
         >
-          <Link
-            href={"/"}
-            className="relative group text-gray-800 hover:text-[#ffb41c] hover:font-bold transition-all ease-in-out duration-300"
-          >
-            Home
-            <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link
-            href={"/"}
-            className="relative group text-gray-800 hover:text-[#ffb41c] hover:font-bold transition-all ease-in-out duration-300"
-          >
-            About
-            <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link
-            href={"/"}
-            className="relative group text-gray-800 hover:text-[#ffb41c] hover:font-bold transition-all ease-in-out duration-300"
-          >
-            Films
-            <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link
-            href={"/"}
-            className="relative group text-gray-800 hover:text-[#ffb41c] hover:font-bold transition-all ease-in-out duration-300"
-          >
-            Contact Us
-            <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-          </Link>
+          {["Home", "About", "Films", "Contact Us"].map((link, index) => (
+            <Link
+              key={index}
+              href={`/${link.toLowerCase().replace(" ", "-")}`}
+              className={`relative group font-bold transition-all ease-in-out duration-300 ${
+                isScrolled
+                  ? "text-white hover:text-[#ffb41c]"
+                  : "text-gray-800 hover:text-[#ffb41c]"
+              }`}
+            >
+              {link}
+              <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
+            </Link>
+          ))}
         </div>
-        <div className="md:hidden  flex items-center mr-4">
+        <div className="md:hidden flex items-center mr-4">
           <button
             onClick={toggleMenu}
-            className="text-black focus:outline-none"
+            className={`focus:outline-none ${
+              isScrolled ? "text-white" : "text-black"
+            }`}
           >
             <svg
               className="w-6 h-6"
@@ -86,7 +96,7 @@ const Navbar = () => {
         <div className="flex flex-row items-center w-full justify-end px-8 py-4">
           <button
             onClick={toggleMenu}
-            className="text-black focus:outline-none"
+            className="text-white focus:outline-none"
           >
             <svg
               width={20}

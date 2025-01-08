@@ -138,59 +138,89 @@ const AboutHome = () => {
   return (
     <div className="z-10 flex flex-col items-center w-full">
       <div
-        className="py-8  flex flex-col items-center justify-center px-8 bg-black absolute top-[100vh]"
+        className="py-8  flex flex-col items-center justify-center px-8 bg-black absolute top-[50vh] sm:top-[90vh]"
         data-aos="fade-up"
       >
-        <div
-          className="flex flex-col items-center w-full mb-8"
-          data-aos="fade-up"
-        >
+        <div className="w-full lg:min-h-[80vh] flex flex-col items-center justify-center">
           <div
-            className={` sm:hidden flex flex-col items-center   leading-[40px]  font-bold text-[40px]   text-white ${playfairDisplay.className} w-4/12`}
+            className="flex flex-col items-center w-full mb-8"
+            data-aos="fade-up"
           >
-            <h1 className={`   `}>ABOUT</h1>
-            <h1 className={` opacity-55`}>ABOUT</h1>
-            <h1 className={`  opacity-25`}>ABOUT</h1>
-          </div>
-        </div>
-        <div
-          className="flex flex-row items-center justify-between mt-8"
-          data-aos="fade-up"
-        >
-          <div
-            className={`hidden sm:flex flex-col items-start sm:leading-[50px] sm:text-[55px] md:leading-[60px] md:text-[60px] lg:leading-[85px] xl:leading-[100px]  font-bold lg:text-[90px] xl:text-[110px] text-white ${playfairDisplay.className} w-4/12`}
-          >
-            <h1 className={`   `}>ABOUT</h1>
-            <h1 className={` opacity-55`}>ABOUT</h1>
-            <h1 className={`  opacity-25`}>ABOUT</h1>
+            <div
+              className={` sm:hidden flex flex-col items-center   leading-[40px]  font-bold text-[40px]   text-white ${playfairDisplay.className} w-4/12`}
+            >
+              <h1 className={`   `}>ABOUT</h1>
+              <h1 className={` opacity-55`}>ABOUT</h1>
+              <h1 className={`  opacity-25`}>ABOUT</h1>
+            </div>
           </div>
           <div
-            className={`flex flex-col items-center justify-center w-5/12 sm:w-3/12 text-white ${playfairDisplay.className}`}
+            className="flex flex-row items-center justify-between mt-8"
+            data-aos="fade-up"
           >
-            <p className="text-start text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs xl:text-sm">
-              At Locomotive, we believe in the power of storytelling. Founded in
-              2021 in the Emirates, we are a film production company reshaping
-              Middle Eastern cinema. Our mission is simple: to create films that
-              feel as real as life itself, connecting deeply with audiences.
-              We’re not just making movies; we’re crafting experiences. Our
-              debut action film is a testament to our commitment to quality,
-              realism, and authenticity, delivering stories that leave viewers
-              feeling like they’ve lived the journey themselves.
-            </p>
-          </div>
-          <img
+            <div
+              className={`hidden sm:flex flex-col items-start font-bold 
+                 sm:leading-[50px] sm:text-[55px] 
+                 md:leading-[60px] md:text-[60px] 
+                 lg:leading-[85px] lg:text-[90px] 
+                 xl:leading-[100px] xl:text-[110px]
+                 2xl:leading-[140px] 2xl:text-[140px]
+                 3xl:leading-[160px] 3xl:text-[160px]
+                 4xl:leading-[180px] 4xl:text-[180px]
+                 5xl:leading-[190px] 5xl:text-[190px]
+                 6xl:leading-[200px] 6xl:text-[200px]
+                  text-white ${playfairDisplay.className} w-4/12`}
+            >
+              <h1 className={`   `}>ABOUT</h1>
+              <h1 className={` opacity-55`}>ABOUT</h1>
+              <h1 className={`  opacity-25`}>ABOUT</h1>
+            </div>
+            <div
+              className={`flex flex-col items-center justify-center w-5/12 sm:w-3/12 text-white ${playfairDisplay.className}`}
+            >
+              <p
+                className="text-start text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs xl:text-sm
+              2xl:text-lg
+              4xl:text-xl
+              "
+              >
+                At Locomotive, we believe in the power of storytelling. Founded
+                in 2021 in the Emirates, we are a film production company
+                reshaping Middle Eastern cinema. Our mission is simple: to
+                create films that feel as real as life itself, connecting deeply
+                with audiences. We’re not just making movies; we’re crafting
+                experiences. Our debut action film is a testament to our
+                commitment to quality, realism, and authenticity, delivering
+                stories that leave viewers feeling like they’ve lived the
+                journey themselves.
+              </p>
+            </div>
+            {/* <img
             src="/assets/AboutSection-side-image.png"
             alt="about image"
             className="w-6/12 sm:w-4/12 h-auto"
-          />
+          /> */}
+            <div className="relative w-6/12 sm:w-4/12">
+              <img
+                src="/assets/AboutSection-side-image-clr.png"
+                alt="about image"
+                className="w-full h-auto transition-opacity opacity-100 duration-300 top-0 left-0z-30"
+              />
+              <img
+                src="/assets/AboutSection-side-image-bw.png"
+                alt="about image"
+                className="w-full h-auto transition-opacity duration-300 absolute top-0 left-0  hover:opacity-0  opacity-100 z-40"
+              />
+            </div>
+          </div>
         </div>
-        <div
+        {/* <div
           className="pt-8 flex xl:flex-row flex-col justify-between mt-8 "
           data-aos="fade-up"
         >
           <img
             className="w-full sm:w-9/12 xl:w-7/12 h-auto"
-            src="/assets/AboutSection-bg-image.png"
+            src="/assets/AboutSection-bg-image-bw.png"
             alt="about Bg"
           />
           <div
@@ -218,18 +248,87 @@ const AboutHome = () => {
               long after the credits roll.
             </p>
           </div>
-        </div>
+        </div> */}
         <div
-          className="flex lg:flex-row flex-col items-center justify-between mt-8"
+          className="pt-8 flex xl:flex-row flex-col justify-between mt-8 w-full"
           data-aos="fade-up"
         >
-          <div className="w-full  rounded-md   lg:hidden flex flex-col items-center justify-center bg-white">
-            <h1 className="uppercase text-center font-bold text-[30px] sm:text-[70px] text-black leading-[40px] sm:leading-[70px] py-4">
+          {/* Image with hover effect */}
+          <div className=" relative w-full sm:w-9/12 xl:w-7/12 bg-red-800  xl:min-h-[60vh] flex flex-col items-center justify-center">
+            <img
+              src="/assets/AboutSection-bg-image-clr.png"
+              alt="about Bg"
+              className="xl:h-[90vh] w-full h-auto transition-opacity opacity-100 duration-300  bg-contain bg-center z-10"
+            />
+            <img
+              src="/assets/AboutSection-bg-image-bw.png"
+              alt="about Bg"
+              className="xl:h-[90vh] w-full h-auto transition-opacity duration-300 absolute bg-contain bg-center  hover:opacity-0 opacity-100 z-20"
+            />
+          </div>
+
+          {/* Text Content */}
+          <div
+            className={`flex flex-col items-center justify-end p-4 relative ${playfairDisplay.className} w-full xl:w-5/12`}
+          >
+            <div
+              className="absolute 
+            bottom-[300px] sm:bottom-[320px] md:bottom-[330px] lg:bottom-[300px] right-[14%] sm:right-[20%]   xl:left-[-190px]
+            3xl:bottom-[380px] 3xl:left-[-150px] 4xl:bottom-[500px] 2xl:bottom-[440px]
+            h-24 w-24 sm:h-40 md:h-52 lg:h-60 sm:w-40 md:w-52 lg:w-60 
+            5xl:w-[400px] 5xl:h-[400px] 4xl:w-[350px] 4xl:h-[350px]
+             3xl:w-[300px]  3xl:h-[300px]  2xl:w-[250px]  2xl:h-[250px]
+             bg-white rounded-full flex flex-col items-center justify-center z-40"
+            >
+              <div
+                className="relative text-[20px] sm:text-[25px] md:text-[35px] lg:text-[50px]
+              5xl:text-[80px] 4xl:text-[70px]  3xl:text-[60px]
+              flex flex-row items-center justify-center"
+              >
+                <h1
+                  className="uppercase font-bold ml-12 absolute
+                right-[-110px] sm:right-[-182px] md:right-[-235px] lg:right-[-270px]
+                5xl:right-[-430px] 4xl:right-[-380px] 3xl:right-[-350px] 
+                min-w-[130px] sm:min-w-[180px] md:min-w-[250px] lg:min-w-[310px]
+                5xl:min-w-[490px] 4xl:min-w-[440px] 3xl:min-w-[390px]
+                 leading-[25px] sm:leading-[30px] md:leading-[50px] 
+                 5xl:leading-[90px]  4xl:leading-[80px] 3xl:leading-[70px]"
+                >
+                  <span className="text-black">More</span>
+                  <span className="text-white"> than </span>Just a{" "}
+                  <span className="text-[25px] sm:text-[30px] md:text-[40px] lg:text-[60px] 5xl:text-[90px]  4xl:text-[80px] 3xl:text-[70px]">
+                    Mov<span className="text-white">ie</span>
+                  </span>
+                </h1>
+              </div>
+            </div>
+            <p className="text-start text-white text-[12px] sm:text-[16px] xl:text-[20px] 2xl:text-[24px]  4xl:text-[28px] 6xl:text-[40px]">
+              When you watch our debut action film, you're not just observing a
+              story—you’re entering a world that feels real. Every scene, every
+              sound, is crafted to pull you in. We focus on realistic action,
+              stunning cinematography, and performances that bring complex,
+              flawed characters to life —characters you’ll see parts of yourself
+              in. Our commitment to authenticity makes this more than just
+              entertainment. It’s a gripping, immersive experience that lingers
+              long after the credits roll.
+            </p>
+          </div>
+        </div>
+        <div
+          className="flex lg:flex-row flex-col items-center justify-between mt-24 lg:mt-8 lg:min-h-[80vh]"
+          data-aos="fade-up"
+        >
+          <div className="w-full  rounded-md py-8  lg:hidden flex flex-col items-center  justify-center text-black  bg-white hover:bg-black hover:border-white hover:text-white transition-colors duration-300">
+            <h1 className="uppercase text-center font-bold text-[30px] sm:text-[70px]   leading-[40px] sm:leading-[70px] py-4">
               Setting <br />a New <br />
               Standard
             </h1>
           </div>
-          <div className="pt-8 lg:pt-0 my-4 lg:my-0 w-full lg:w-3/12 flex flex-col items-start text-white">
+          <div
+            className="pt-8 lg:pt-0 my-4 lg:my-0 w-full lg:w-3/12 flex flex-col items-start text-white
+          4xl:text-[24px] 2xl:text-[20px]
+          "
+          >
             <p>
               We are not just another production company we are a movement. At
               Locomotive, we are setting a new standard for Arabic cinema by
@@ -247,20 +346,32 @@ const AboutHome = () => {
               experience for all our fans.
             </p>
           </div>
-          <div className=" my-4 lg:my-0 hidden w-4/12 lg:flex flex-col items-center justify-center bg-white">
-            <h1 className="text-center font-bold text-[70px] text-black uppercase">
+          <div className=" my-4 lg:my-0 lg:py-0 2xl:py-12 hidden w-4/12 lg:flex flex-col items-center  border border-white justify-center text-black  bg-white hover:bg-black hover:border-white hover:text-white transition-colors duration-300">
+            <h1 className="text-center font-bold text-[50px] xl:text-[70px] uppercase">
               Setting <br />a <br />
               New <br />
               Standard
             </h1>
           </div>
-          <div className="my-4 lg:my-0 w-full lg:w-4/12 flex flex-col items-center justify-center bg-white">
+          <div className="  h-full relative my-4 lg:my-0 w-full lg:w-4/12 flex flex-row items-center justify-center bg-black">
             <img
-              className="w-auto h-full"
-              src="/assets/AboutSection-side-image2.png"
+              className="w-full h-auto transition-opacity duration-300 absolute top-0 lg:top-auto left-0   opacity-100 lg:z-40 z-30"
+              src="/assets/AboutSection-side-image2-clr.png"
+              alt="About Image 2"
+            />
+            <img
+              className="w-full h-auto transition-opacity duration-300 lg:absolute top-0 lg:top-auto left-0  hover:opacity-0 opacity-0 lg:opacity-100 lg:z-40"
+              src="/assets/AboutSection-side-image2-bw.png"
               alt="About Image 2"
             />
           </div>
+          {/* <div className="my-4 lg:my-0 w-full lg:w-4/12 flex flex-col items-center justify-center bg-white">
+            <img
+              className="w-auto h-full"
+              src="/assets/AboutSection-side-image2-bw.png"
+              alt="About Image 2"
+            />
+          </div> */}
         </div>
         <WhyUsHome />
         <Footer />
