@@ -138,10 +138,13 @@ const AboutHome = () => {
   return (
     <div className="z-10 flex flex-col items-center w-full">
       <div
-        className="py-8  flex flex-col items-center justify-center px-8 bg-black absolute top-[50vh] sm:top-[90vh]"
+        className="py-8  flex flex-col items-center justify-center px-8 bg-black absolute top-[50vh] sm:top-[100vh] pt-[28px]"
         data-aos="fade-up"
       >
-        <div className="w-full lg:min-h-[80vh] flex flex-col items-center justify-center">
+        <div
+          id="about"
+          className="w-full lg:min-h-[100vh] flex flex-col items-center justify-center"
+        >
           <div
             className="flex flex-col items-center w-full mb-8"
             data-aos="fade-up"
@@ -250,11 +253,12 @@ const AboutHome = () => {
           </div>
         </div> */}
         <div
-          className="pt-8 flex xl:flex-row flex-col justify-between mt-8 w-full"
+          id="films"
+          className=" flex xl:flex-row flex-col justify-between mt-8 w-full lg:pt-10 "
           data-aos="fade-up"
         >
           {/* Image with hover effect */}
-          <div className=" relative w-full sm:w-9/12 xl:w-7/12 bg-red-800  xl:min-h-[60vh] flex flex-col items-center justify-center">
+          <div className=" relative w-full sm:w-9/12 xl:w-7/12 bg-black   xl:min-h-[100vh] flex flex-col items-center justify-center">
             <img
               src="/assets/AboutSection-bg-image-clr.png"
               alt="about Bg"
@@ -315,8 +319,9 @@ const AboutHome = () => {
           </div>
         </div>
         <div
-          className="flex lg:flex-row flex-col items-center justify-between mt-24 lg:mt-8 lg:min-h-[80vh]"
+          className="flex lg:flex-row flex-col items-center justify-between mt-24 lg:mt-8 lg:min-h-[100vh] lg:pt-28"
           data-aos="fade-up"
+          id="contact us"
         >
           <div className="w-full  rounded-md py-8  lg:hidden flex flex-col items-center  justify-center text-black  bg-white hover:bg-black hover:border-white hover:text-white transition-colors duration-300">
             <h1 className="uppercase text-center font-bold text-[30px] sm:text-[70px]   leading-[40px] sm:leading-[70px] py-4">

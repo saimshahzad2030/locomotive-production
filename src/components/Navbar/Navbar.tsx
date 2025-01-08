@@ -50,7 +50,7 @@ const Navbar = () => {
           {["Home", "About", "Films", "Contact Us"].map((link, index) => (
             <Link
               key={index}
-              href={`/${link.toLowerCase().replace(" ", "-")}`}
+              href={`#${link.toLowerCase()}`}
               className={`relative group font-bold transition-all ease-in-out duration-300 ${
                 isScrolled
                   ? "text-white hover:text-[#ffb41c]"
