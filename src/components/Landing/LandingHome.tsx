@@ -1,3 +1,4 @@
+"use client";
 import { playfairDisplay } from "@/utils/fonts";
 import React from "react";
 

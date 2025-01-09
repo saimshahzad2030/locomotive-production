@@ -3,6 +3,7 @@ import {
   Jomolhari,
   Lexend,
   Gabarito,
+  Zen_Antique_Soft,
 } from "next/font/google";
 
 export const jomolhari = Jomolhari({ weight: "400", subsets: ["latin"] });
@@ -19,4 +20,7 @@ export const lexend = Lexend({
 export const gabirato = Gabarito({
   subsets: ["latin"],
   weight: ["400", "700"], // Specify the weights you need
+});
+export const zenAntiqueSoft = Zen_Antique_Soft({
+  weight: ["400"], // Specify the weights you need
 });

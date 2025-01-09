@@ -1,3 +1,4 @@
+"use client";
 import { gabirato, lexend, playfairDisplay } from "@/utils/fonts";
 import React from "react";
 
