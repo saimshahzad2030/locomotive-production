@@ -22,5 +22,7 @@ export const gabirato = Gabarito({
   weight: ["400", "700"], // Specify the weights you need
 });
 export const zenAntiqueSoft = Zen_Antique_Soft({
+  subsets: ["latin"],
+
   weight: ["400"], // Specify the weights you need
 });
