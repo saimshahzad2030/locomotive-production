@@ -5,7 +5,7 @@ import React from "react";
 const WhyUsHome = () => {
   return (
     <div
-      className=" flex flex-col items-center justify-between w-full min-h-[50vh] sm:min-h-[40vh] md:h-[100vh] bg-cover bg-center lg:p-8 py-6 mt-8 transition-all duration-500 ease-in-out bg-[url('/assets/WhyUsHomeBg-bw.png')] hover:bg-[url('/assets/WhyUsHomeBg-clr.png')]"
+      className=" flex flex-col items-center justify-between w-full min-h-[50vh] sm:min-h-[40vh] md:h-[80vh] bg-cover bg-center lg:p-8 py-6 mt-8 transition-all duration-500 ease-in-out bg-[url('/assets/WhyUsHomeBg-bw.png')] hover:bg-[url('/assets/WhyUsHomeBg-clr.png')]"
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
