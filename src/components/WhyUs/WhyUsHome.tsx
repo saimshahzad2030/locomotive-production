@@ -28,7 +28,7 @@ const WhyUsHome = () => {
           WATCH NOW
         </button>
         <p
-          className={`text-[14px] sm:text-[20px] bg-black bg-opacity-40 sm:bg-transparent sm:bg-none w-full mt-4 text-center text-white ${gabirato.className} sm:px-12`}
+          className={`text-[10px] sm:text-[20px] bg-black bg-opacity-40 sm:bg-transparent sm:bg-none w-full mt-4 text-center text-white ${gabirato.className} sm:px-12`}
         >
           Ready for an unforgettable cinematic journey? Watch the trailer for
           our debut action film now and get a taste of what’s to come. Join us

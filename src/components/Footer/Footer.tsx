@@ -5,10 +5,10 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="flex flex-row-reverse sm:flex-row item-start sm:items-center justify-evenly w-full pt-4 text-white">
-      <div className="w-6/12 sm:w-3/12">
+      <div className="w-6/12 sm:w-3/12  text-[11px] sm:text-auto">
         <p>Legal and copyright info</p>
       </div>
-      <div className="uppercase flex sm:flex-row flex-col sm:items-center items-start">
+      <div className="uppercase flex sm:flex-row flex-col sm:items-center items-start text-[11px] sm:text-auto">
         <Link
           href={"/"}
           className="mr-4 relative group text-white hover:text-[#ffb41c] hover:font-bold transition-all ease-in-out duration-300"
