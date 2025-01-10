@@ -53,7 +53,7 @@ const AboutHome = () => {
             >
               <p
                 className="text-justify text-[10px] sm:text-[9px] md:text-[10px]
-                 lg:text-[14px] xl:text-[16px] xl:leading-[26px] wxl:leaeding-auto
+                 lg:text-[14px] xl:text-[16px] xl:leading-[26px] 2xl:leading-auto
               2xl:text-2xl
               3xl:text-2xl
               4xl:text-3xl
@@ -145,8 +145,8 @@ const AboutHome = () => {
               className={`
                 pt-28  
                 xl:pt-0   text-start text-white text-[10px] sm:text-[9px] md:text-[10px] lg:text-xs 
-                xl:text-xl
-                xl:leading-[25px]
+                xl:text-[16px]
+                xl:leading-[35px]
               2xl:text-3xl 
               2xl:leading-[50px]
               4xl:leading-auto
