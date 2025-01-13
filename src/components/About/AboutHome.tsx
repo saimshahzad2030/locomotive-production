@@ -257,6 +257,7 @@ const AboutHome = () => {
             </h1>
           </div>
           <div
+            data-aos="fade-up"
             className={`bg-black px-4 sm:py-0 py-4 w-full pt-8 lg:pt-0   flex text-[10px] flex-col items-start justify-center text-white
           4xl:text-[24px] 2xl:text-[20px] xl:text-[14px] lg:text-[11px]  text-justify 
             ${zenAntiqueSoft.className}`}
@@ -278,7 +279,10 @@ const AboutHome = () => {
               experience for all our fans.
             </p>
           </div>
-          <div className=" lg:min-h-[60vh]   lg:py-0 2xl:py-12 hidden w-full lg:flex flex-col items-center  border border-black justify-center text-black  bg-white hover:bg-black hover:border-white hover:text-white transition-colors duration-300">
+          <div
+            data-aos="fade-up"
+            className=" lg:min-h-[60vh]   lg:py-0 2xl:py-12 hidden w-full lg:flex flex-col items-center  border border-black justify-center text-black  bg-white hover:bg-black hover:border-white hover:text-white transition-colors duration-300"
+          >
             <h1
               style={{
                 WebkitTextStroke: "4px ",
@@ -289,7 +293,10 @@ const AboutHome = () => {
               Standards
             </h1>
           </div>
-          <div className="  h-full relative    w-full   flex flex-row items-center justify-center bg-black">
+          <div
+            data-aos="fade-up"
+            className="  h-full relative    w-full   flex flex-row items-center justify-center bg-black"
+          >
             <img
               className="w-full h-auto transition-opacity duration-300 absolute top-0 lg:top-auto left-0   opacity-100 lg:z-40 z-30"
               src="/assets/AboutSection-side-image2-clr.png"
@@ -301,13 +308,6 @@ const AboutHome = () => {
               alt="About Image 2"
             />
           </div>
-          {/* <div className="my-4 lg:my-0 w-full lg:w-4/12 flex flex-col items-center justify-center bg-white">
-            <img
-              className="w-auto h-full"
-              src="/assets/AboutSection-side-image2-bw.png"
-              alt="About Image 2"
-            />
-          </div> */}
         </div>
         <WhyUsHome />
         <Footer />
