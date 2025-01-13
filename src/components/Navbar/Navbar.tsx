@@ -45,7 +45,7 @@ const Navbar = () => {
           />
         </div>
         <div
-          className={`text-[14px] hidden md:flex flex-row items-center justify-evenly w-5/12 ${jomolhari.className} lg:text-[16px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[40px]`}
+          className={`text-[14px] hidden md:flex flex-row items-center justify-evenly w-5/12 ${jomolhari.className} lg:text-[13px] 2xl:text-[22px] 3xl:text-[27px] 4xl:text-[32px] 5xl:text-[37px]`}
         >
           {["Home", "About", "Films", "Contact Us"].map((link, index) => (
             <Link
@@ -54,11 +54,15 @@ const Navbar = () => {
               className={`relative group font-bold transition-all ease-in-out duration-300 ${
                 isScrolled
                   ? "text-white hover:text-[#ffb41c]"
-                  : "text-gray-800 hover:text-[#ffb41c]"
+                  : ` hover:text-[#ffb41c]`
               }`}
             >
               {link}
-              <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
+              <span
+                className={`${
+                  isScrolled ? "bg-white" : "bg-black "
+                } absolute left-0 bottom-[-2px] w-0 h-[2px] transition-all duration-300 group-hover:w-full`}
+              ></span>
             </Link>
           ))}
         </div>

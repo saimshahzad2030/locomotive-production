@@ -8,57 +8,62 @@ const AboutHome = () => {
   return (
     <div className="z-10 flex flex-col items-center w-full overflow-y-hidden">
       <div
-        className="overflow-y-hidden py-8  flex flex-col items-center justify-center px-8 bg-black absolute top-[50vh] sm:top-[100vh] pt-[28px]"
-        // data-aos="fade-up"
+        className="sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center bg-black  absolute top-[50vh] sm:top-[100vh]  "
+        data-aos="fade-up"
       >
         <div
           id="about"
-          className="w-full sm:min-h-[40vh] lg:min-h-[100vh] flex flex-col items-center justify-center"
+          className=" border border-white border-b-4 border-t-8 border-r-8 border-l-8 w-full sm:min-h-[40vh] lg:min-h-[100vh] flex flex-col items-center justify-center"
         >
           <div
-            className="flex flex-col items-center w-full mb-8"
-            data-aos="fade-up"
+            className="flex flex-col items-center w-full  bg-black"
+            // data-aos="fade-up"
           >
             <div
-              className={` sm:hidden flex flex-col items-center   leading-[40px]  font-bold text-[40px]   text-white ${playfairDisplay.className} w-4/12`}
+              className={`py-4 bg-black sm:hidden flex flex-col items-center   leading-[40px]  font-bold text-[40px]   text-white ${playfairDisplay.className} w-4/12`}
             >
               <h1 className={`   `}>ABOUT</h1>
               <h1 className={` opacity-55`}>ABOUT</h1>
               <h1 className={`  opacity-25`}>ABOUT</h1>
             </div>
           </div>
-          <div
-            className="grid grid-cols-2 gap-x-4 sm:grid-cols-3 w-full items-center justify-between mt-8"
-            data-aos="fade-up"
-          >
+          <div className="bg-white grid grid-cols-2 sm:gap-2 sm:grid-cols-3 w-full items-center justify-between  sm:min-h-[40vh] lg:min-h-[100vh]">
             <div
-              className={`hidden sm:flex flex-col items-center font-bold 
-                 sm:leading-[50px] sm:text-[55px] 
-                 md:leading-[60px] md:text-[60px] 
-                 lg:leading-[85px] lg:text-[90px] 
+              className={`hidden sm:flex flex-col items-center justify-center font-bold
+                 sm:leading-[50px] sm:text-[55px]
+                 md:leading-[60px] md:text-[60px]
+                 lg:leading-[85px] lg:text-[90px]
                  xl:leading-[100px] xl:text-[110px]
                  2xl:leading-[140px] 2xl:text-[140px]
                  3xl:leading-[160px] 3xl:text-[160px]
                  4xl:leading-[180px] 4xl:text-[180px]
                  5xl:leading-[190px] 5xl:text-[190px]
                  6xl:leading-[200px] 6xl:text-[200px]
+                 bg-black
+ h-full
                   text-white w-full ${playfairDisplay.className} `}
+              data-aos="fade-up"
             >
-              <h1 className={`  text-center  `}>ABOUT</h1>
-              <h1 className={` text-center opacity-55`}>ABOUT</h1>
-              <h1 className={` text-center  opacity-25`}>ABOUT</h1>
+              <h1 className={`  text-center `}>ABOUT</h1>
+              <h1 className={` text-center opacity-55 `}>ABOUT</h1>
+              <h1 className={` text-center  opacity-25 `}>ABOUT</h1>
             </div>
             <div
-              className={` h-full w-full   flex flex-col items-center justify-center  text-white ${playfairDisplay.className}`}
+              data-aos="fade-up"
+              className={` sm:min-h-[40vh] lg:min-h-[100vh]  bg-black  w-full   flex flex-col items-center justify-center  text-white ${playfairDisplay.className}`}
             >
               <p
-                className="text-justify text-[10px] sm:text-[9px] md:text-[10px]
-                 lg:text-[14px] xl:text-[16px] xl:leading-[26px] 2xl:leading-auto
-              2xl:text-2xl
-              3xl:text-2xl
-              4xl:text-3xl
-              5xl:text-4xl
-              "
+                className="text-justify
+              text-[10px] sm:text-[9px] md:text-[10px]
+              lg:text-[14px] xl:text-[16px] xl:leading-[26px] 2xl:leading-auto
+           2xl:text-2xl
+           3xl:text-2xl
+           4xl:text-3xl
+           5xl:text-4xl
+           px-4  sm:py-0 py-4
+            bg-black
+            h-full
+           "
               >
                 At Locomotive, we believe in the power of storytelling. Founded
                 in 2021 in the Emirates, we are a film production company
@@ -72,16 +77,19 @@ const AboutHome = () => {
               </p>
             </div>
 
-            <div className="relative w-full">
+            <div
+              className="relative w-full h-full bg-black flex flex-col items-center justify-center"
+              data-aos="fade-up"
+            >
               <img
                 src="/assets/AboutSection-side-image-clr.png"
                 alt="about image"
-                className="w-full h-auto transition-opacity opacity-100 duration-300 top-0 left-0z-30"
+                className="w-full h-full  object-cover transition-opacity opacity-100 duration-300 top-0 left-0 z-30"
               />
               <img
                 src="/assets/AboutSection-side-image-bw.png"
                 alt="about image"
-                className="w-full h-auto transition-opacity duration-300 absolute top-0 left-0  hover:opacity-0  opacity-100 z-40"
+                className="w-full h-full  object-cover transition-opacity duration-300 absolute top-0 left-0  hover:opacity-0  opacity-100 z-40"
               />
             </div>
           </div>
@@ -89,11 +97,13 @@ const AboutHome = () => {
 
         <div
           id="films"
-          className="grid grid-cols-1 xl:grid-cols-2 gap-8 justify-between mt-8 w-full lg:pt-20 "
-          data-aos="fade-up"
+          className=" border border-white border-b-8 border-t-4 border-r-8 border-l-8  grid grid-cols-1 xl:grid-cols-2 gap-8 justify-between w-full lg:py-8 "
         >
           {/* Image with hover effect */}
-          <div className=" relative w-full  bg-pink-300   xl:min-h-[80vh] flex flex-col items-center justify-center">
+          <div
+            data-aos="fade-up"
+            className=" relative w-full  bg-pink-300   xl:min-h-[80vh] flex flex-col items-center justify-center"
+          >
             <img
               src="/assets/AboutSection-bg-image-clr.png"
               alt="about Bg"
@@ -108,6 +118,7 @@ const AboutHome = () => {
 
           {/* Text Content */}
           <div
+            data-aos="fade-up"
             className={`hidden xl:flex flex-col items-center justify-end p-4 relative ${playfairDisplay.className} w-full   xl:h-[80vh]`}
           >
             <div
@@ -116,7 +127,8 @@ const AboutHome = () => {
              top-0 sm:top-[10px] xl:top-[-20px]  xl:right-[100%] 
             h-24 w-24 sm:h-40 md:h-52 lg:h-60 sm:w-40 md:w-52 lg:w-60 
             5xl:w-[400px] 5xl:h-[400px] 4xl:w-[350px] 4xl:h-[350px]
-             3xl:w-[300px]  3xl:h-[300px]  2xl:w-[250px]  2xl:h-[250px]
+             3xl:w-[420px]  3xl:h-[420px]  2xl:w-[250px]  2xl:h-[250px]
+             xl-2:h-[280px] xl-2:w-[280px]
              bg-white rounded-full flex flex-col items-center justify-center z-40"
             >
               <div
@@ -127,15 +139,17 @@ const AboutHome = () => {
                 <h1
                   className="uppercase font-bold ml-12 absolute
                 right-[-110px] sm:right-[-182px] md:right-[-235px] lg:right-[-270px]
-                5xl:right-[-430px] 4xl:right-[-380px] 3xl:right-[-350px] 
+                5xl:right-[-430px] 4xl:right-[-380px] 3xl:right-[-385px] 
                 min-w-[130px] sm:min-w-[180px] md:min-w-[250px] lg:min-w-[310px]
+                xl-2:right-[-250px] 
                 5xl:min-w-[490px] 4xl:min-w-[440px] 3xl:min-w-[390px]
                  leading-[25px] sm:leading-[30px] md:leading-[50px] 
-                 5xl:leading-[90px]  4xl:leading-[80px] 3xl:leading-[70px]"
+                 5xl:leading-[90px]  4xl:leading-[80px] 3xl:leading-[90px]
+                  xl-2:leading-[70px]"
                 >
                   <span className="text-black">More</span>
                   <span className="text-white"> than </span>Just a{" "}
-                  <span className="text-[25px] sm:text-[30px] md:text-[40px] lg:text-[60px] 5xl:text-[90px]  4xl:text-[80px] 3xl:text-[70px]">
+                  <span className="text-[25px] sm:text-[30px] md:text-[40px] lg:text-[60px] 5xl:text-[90px]  4xl:text-[80px] 3xl:text-[90px] xl-2:text-[80px]">
                     Mov<span className="text-white">ie</span>
                   </span>
                 </h1>
@@ -144,12 +158,13 @@ const AboutHome = () => {
             <p
               className={`
                 pt-28  
-                xl:pt-0   text-start text-white text-[10px] sm:text-[9px] md:text-[10px] lg:text-xs 
+                xl:pt-0   text-white text-[10px] sm:text-[9px] md:text-[10px] lg:text-xs 
                 xl:text-[16px]
                 xl:leading-[35px]
               2xl:text-3xl 
               2xl:leading-[50px]
               4xl:leading-auto
+              text-justify
               4xl:text-xl`}
             >
               When you watch our debut action film, you're not just observing a
@@ -166,11 +181,13 @@ const AboutHome = () => {
             className={`  grid   xl:hidden grid-cols-3 p-4 relative ${playfairDisplay.className} w-full   xl:h-[80vh]`}
           >
             <div
+              data-aos="fade-up"
               className=" 
            
             h-24 w-24 sm:h-40 md:h-52 lg:h-60 sm:w-40 md:w-52 lg:w-60 
             5xl:w-[400px] 5xl:h-[400px] 4xl:w-[350px] 4xl:h-[350px]
              3xl:w-[300px]  3xl:h-[300px]  2xl:w-[250px]  2xl:h-[250px]
+             xl:h-[350px] xl:w-[350px]
              bg-white rounded-full flex flex-col items-center justify-center z-40"
             >
               <div
@@ -195,18 +212,22 @@ const AboutHome = () => {
                 </h1>
               </div>
             </div>
-            <div className="flex flex-col items-center w-full col-span-2">
+            <div
+              data-aos="fade-up"
+              className="flex flex-col items-center w-full col-span-2"
+            >
               <p
                 className={` 
                 w-full 
                 pt-24  
                 md:px-4 lg:px-0
              sm:pt-40 md:pt-40 lg:pt-48
-                xl:pt-0   text-start text-white text-[10px] sm:text-lg md:text-lg lg:text-lg 
+                xl:pt-0    text-white text-[10px] sm:text-lg md:text-lg lg:text-lg 
                 xl:text-xl
                 xl:leading-[25px]
               2xl:text-3xl 
               2xl:leading-[50px]
+              text-justify
               4xl:leading-auto
               4xl:text-xl`}
               >
@@ -223,19 +244,21 @@ const AboutHome = () => {
           </div>
         </div>
         <div
-          className="flex lg:flex-row flex-col items-center justify-between mt-24 lg:mt-8 lg:min-h-[100vh] lg:pt-28"
-          data-aos="fade-up"
+          className="bg-white border border-white border-b-8 border-t-4 border-r-8 border-l-8  grid sm:gap-2 lg:grid-cols-3 grid-cols-1 w-full lg:min-h-[100vh]  "
           id="contact us"
         >
-          <div className=" w-full  rounded-md py-8  lg:hidden flex flex-col items-center  justify-center text-black  bg-white hover:bg-black hover:border-white hover:text-white transition-colors duration-300">
+          <div
+            data-aos="fade-up"
+            className=" w-full  sm:py-8  lg:hidden flex flex-col items-center  justify-center border text-black  border-black bg-white hover:bg-black hover:border-white hover:text-white transition-colors duration-300"
+          >
             <h1 className="uppercase text-center font-bold text-[30px] sm:text-[70px]   leading-[40px] sm:leading-[70px] py-4">
               Setting <br /> New <br />
               Standards
             </h1>
           </div>
           <div
-            className={`pt-8 lg:pt-0 my-4 lg:my-0 w-full lg:w-3/12 flex text-[10px] flex-col items-start text-white
-          4xl:text-[24px] 2xl:text-[20px] xl:text-[12px] lg:text-[11px]  
+            className={`bg-black px-4 sm:py-0 py-4 w-full pt-8 lg:pt-0   flex text-[10px] flex-col items-start justify-center text-white
+          4xl:text-[24px] 2xl:text-[20px] xl:text-[14px] lg:text-[11px]  text-justify 
             ${zenAntiqueSoft.className}`}
           >
             <p>
@@ -255,18 +278,18 @@ const AboutHome = () => {
               experience for all our fans.
             </p>
           </div>
-          <div className=" lg:min-h-[60vh] my-4 lg:my-0 lg:py-0 2xl:py-12 hidden w-4/12 lg:flex flex-col items-center  border border-white justify-center text-black  bg-white hover:bg-black hover:border-white hover:text-white transition-colors duration-300">
+          <div className=" lg:min-h-[60vh]   lg:py-0 2xl:py-12 hidden w-full lg:flex flex-col items-center  border border-black justify-center text-black  bg-white hover:bg-black hover:border-white hover:text-white transition-colors duration-300">
             <h1
               style={{
                 WebkitTextStroke: "4px ",
               }}
-              className={`text-center font-extrabold text-[50px] xl:text-[60px] 2xl:text-[70px] uppercase ${zenAntiqueSoft.className}`}
+              className={`h-1/2 text-center font-extrabold text-[50px] xl:text-[60px] 2xl:text-[70px] uppercase ${zenAntiqueSoft.className}`}
             >
               Setting <br /> New <br />
               Standards
             </h1>
           </div>
-          <div className="  h-full relative my-4 lg:my-0 w-full lg:w-4/12 flex flex-row items-center justify-center bg-black">
+          <div className="  h-full relative    w-full   flex flex-row items-center justify-center bg-black">
             <img
               className="w-full h-auto transition-opacity duration-300 absolute top-0 lg:top-auto left-0   opacity-100 lg:z-40 z-30"
               src="/assets/AboutSection-side-image2-clr.png"

@@ -5,8 +5,11 @@ import React from "react";
 const LandingHome = () => {
   return (
     <div className="fixed   left-0 w-full sm:h-[100vh] h-[50vh]    flex flex-col items-center justify-center   z-0  ">
-      <div className="flex flex-row items-center justify-between  px-8   h-auto overflow-hidden  pt-8 ">
-        <div className="flex flex-col items-start w-7/12" data-aos="fade-left">
+      <div className="flex flex-row items-center justify-evenly  px-8   h-auto overflow-hidden  pt-8 ">
+        <div
+          className="flex flex-col items-start w-7/12 sm:w-6/12"
+          data-aos="fade-left"
+        >
           <h1
             className={`font-semibold 
                text-[22px] xs:text-[32px] sm:text-[45px] md:text-[60px] lg:text-[80px] xl:text-[70px] 2xl:text-[100px] 3xl:text-[120px] 4xl:text-[140px] 5xl:text-[160px]

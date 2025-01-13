@@ -39,17 +39,16 @@ const CustomCursor = () => {
 
   return (
     <div
-      // className="hidden sm:fixed"
       style={{
         position: "fixed",
         top: position.y,
         left: position.x,
-        width: "20px",
-        height: "20px",
+        width: "30px", // Increased radius
+        height: "30px", // Increased radius
         borderRadius: "50%",
-        backgroundColor: "rgba(249,176,26,255)",
+        backgroundColor: "rgba(249, 176, 26, 0.5)", // Add opacity for translucency
         pointerEvents: "none",
-        transform: "translate(-50%, -50%)",
+        transform: "translate(-50%, -50%) scale(1.2)", // Slightly enlarge
         zIndex: 9999,
         transition: "transform 0.1s ease, background-color 0.2s ease",
       }}
