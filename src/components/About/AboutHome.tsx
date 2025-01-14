@@ -244,9 +244,9 @@ const AboutHome = () => {
             </div>
           </div>
         </div>
-        <div className="  bg-black w-full  p-8 lg:p-16 ">
+        <div className="  bg-black  w-full  p-8 lg:p-16 ">
           <div
-            className="  bg-black   grid sm:gap-6 lg:grid-cols-3 grid-cols-1 w-full lg:min-h-[100vh]  "
+            className="    grid sm:gap-6 lg:grid-cols-3 grid-cols-1 w-full lg:min-h-[100vh]  "
             id="contact us"
           >
             <div
@@ -260,7 +260,7 @@ const AboutHome = () => {
             </div>
             <div
               data-aos="fade-up"
-              className={`bg-black pr-8 sm:py-0 py-4 w-full pt-8 lg:pt-0   flex text-[10px] flex-col items-start justify-center text-white
+              className={` pr-8 sm:py-0 py-4 w-full pt-8 lg:pt-0   flex text-[10px] flex-col items-start justify-center text-white
           4xl:text-[24px] 2xl:text-[20px] xl:text-[14px] lg:text-[11px]  text-justify 
             ${zenAntiqueSoft.className}`}
             >
@@ -300,12 +300,12 @@ const AboutHome = () => {
               className="  h-full relative    w-full   flex flex-row items-center justify-center bg-black"
             >
               <img
-                className="w-10/12 h-auto transition-opacity duration-300 absolute top-0 lg:top-auto     opacity-100 lg:z-40 z-30"
+                className="w-full h-auto transition-opacity duration-300 absolute top-0 lg:top-auto     opacity-100 lg:z-40 z-30"
                 src="/assets/AboutSection-side-image2-clr.png"
                 alt="About Image 2"
               />
               <img
-                className="w-10/12 h-auto transition-opacity duration-300 lg:absolute top-0 lg:top-auto  hover:opacity-0 opacity-0 lg:opacity-100 lg:z-40"
+                className="w-full h-auto transition-opacity duration-300 lg:absolute top-0 lg:top-auto  hover:opacity-0 opacity-0 lg:opacity-100 lg:z-40"
                 src="/assets/AboutSection-side-image2-bw.png"
                 alt="About Image 2"
               />
