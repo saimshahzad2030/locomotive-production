@@ -53,7 +53,7 @@ const AboutHome = () => {
               className={` sm:min-h-[40vh] lg:min-h-[100vh]  bg-black  w-full   flex flex-col items-center justify-center  text-white ${playfairDisplay.className}`}
             >
               <p
-                className="text-justify
+                className="text-start
               text-[10px] sm:text-[9px] md:text-[10px]
               lg:text-[14px] xl:text-[18px] xl:leading-[29px] 2xl:leading-auto
            2xl:text-2xl
@@ -63,7 +63,7 @@ const AboutHome = () => {
              sm:py-0 py-4
             bg-black
             h-full
-            px-8
+            lg:px-8 pr-4
            "
               >
                 At Locomotive, we believe in the power of storytelling. Founded
@@ -165,7 +165,7 @@ const AboutHome = () => {
               2xl:text-3xl 
               2xl:leading-[50px]
               4xl:leading-auto
-              text-justify
+              text-start
               4xl:text-xl`}
             >
               When you watch our debut action film, you're not just observing a
@@ -246,10 +246,10 @@ const AboutHome = () => {
         </div>
         <div className="  bg-black  w-full  p-8 lg:p-16 ">
           <div
-            className="    grid sm:gap-6 lg:grid-cols-3 grid-cols-1 w-full lg:min-h-[100vh]  "
+            className="    grid sm:gap-6 lg:grid-cols-3 grid-cols-1 w-full lg:min-h-[70vh]  "
             id="contact us"
           >
-            <div
+            {/* <div
               data-aos="fade-up"
               className=" w-full  sm:py-8  lg:hidden flex flex-col items-center  justify-center border text-black  border-black bg-white hover:bg-black hover:border-black hover:text-white transition-colors duration-300"
             >
@@ -257,12 +257,14 @@ const AboutHome = () => {
                 Setting <br /> New <br />
                 Standards
               </h1>
-            </div>
+            </div> */}
             <div
               data-aos="fade-up"
-              className={` pr-8 sm:py-0 py-4 w-full pt-8 lg:pt-0   flex text-[10px] flex-col items-start justify-center text-white
-          4xl:text-[24px] 2xl:text-[20px] xl:text-[14px] lg:text-[11px]  text-justify 
-            ${zenAntiqueSoft.className}`}
+              className={`  pr-8 sm:py-0 py-4 w-full pt-8 lg:pt-0
+                    flex text-[10px] flex-col items-start justify-center text-white
+              4xl:text-[24px] 2xl:text-[20px] xl:text-[16px] lg:text-[11px]  text-start
+              lg:h-[70vh]
+                ${playfairDisplay.className}`}
             >
               <p>
                 We are not just another production company we are a movement. At
@@ -281,38 +283,42 @@ const AboutHome = () => {
                 seamless viewing experience for all our fans.
               </p>
             </div>
-            <div
-              data-aos="fade-up"
-              className="  lg:min-h-[60vh]   lg:py-0 2xl:py-12 hidden w-full lg:flex flex-col items-center justify-center"
-            >
-              <h1
-                style={{
-                  WebkitTextStroke: "4px ",
-                }}
-                className={`h-1/2 text-center w-11/12  border border-black justify-center text-black  bg-white hover:bg-black hover:border-white hover:text-white transition-colors duration-300 font-extrabold text-[50px] xl:text-[50px] 2xl:text-[70px] uppercase ${zenAntiqueSoft.className}`}
+            <div className="py-8 lg:py-0 px-4 lg:min-h-[70vh] lg:col-span-2 col-span-1 w-full bg-white flex flex-col lg:flex-row items-center lg:justify-evenly">
+              <div
+                data-aos="fade-up"
+                className="h-full lg:py-0 2xl:py-12   w-full  flex flex-col items-center justify-center"
               >
-                Setting <br /> New <br />
-                Standards
-              </h1>
-            </div>
-            <div
-              data-aos="fade-up"
-              className="  h-full relative    w-full   flex flex-row items-center justify-center bg-black"
-            >
-              <img
-                className="w-full h-auto transition-opacity duration-300 absolute top-0 lg:top-auto     opacity-100 lg:z-40 z-30"
-                src="/assets/AboutSection-side-image2-clr.png"
-                alt="About Image 2"
-              />
-              <img
-                className="w-full h-auto transition-opacity duration-300 lg:absolute top-0 lg:top-auto  hover:opacity-0 opacity-0 lg:opacity-100 lg:z-40"
-                src="/assets/AboutSection-side-image2-bw.png"
-                alt="About Image 2"
-              />
+                <h1
+                  style={{
+                    WebkitTextStroke: "4px",
+                  }}
+                  className={` text-center  border border-none justify-center text-black  bg-white  font-extrabold text-[40px] xl:text-[50px] 2xl:text-[70px] uppercase ${zenAntiqueSoft.className}`}
+                >
+                  Setting <br /> New <br />
+                  Standards
+                </h1>
+              </div>
+              <div
+                data-aos="fade-up"
+                className="mt-8 lg:mt-0 h-full relative    w-full   flex flex-row items-center justify-center  "
+              >
+                <img
+                  className="rounded-2xl w-full h-auto transition-opacity duration-300 absolute top-0 lg:top-auto     opacity-100 lg:z-40 z-30"
+                  src="/assets/AboutSection-side-image2-clr.png"
+                  alt="About Image 2"
+                />
+                <img
+                  className="rounded-2xl w-full h-auto transition-opacity duration-300 lg:absolute top-0 lg:top-auto  hover:opacity-0 opacity-0 lg:opacity-100 lg:z-40"
+                  src="/assets/AboutSection-side-image2-bw.png"
+                  alt="About Image 2"
+                />
+              </div>
             </div>
           </div>
         </div>
-        <WhyUsHome />
+        <div className="flex flex-col items-center w-full px-8 lg:px-16">
+          <WhyUsHome />
+        </div>
         <Footer />
       </div>
     </div>
