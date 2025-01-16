@@ -49,7 +49,7 @@ import React from "react";
 const WhyUsHome = () => {
   return (
     <div
-      className="   flex flex-col items-center justify-between w-full min-h-[50vh] sm:min-h-[40vh] md:h-[80vh] bg-cover bg-center lg:p-4 py-6 transition-all duration-500 ease-in-out bg-[url('/assets/WhyUsHomeBg-bw.png')] hover:bg-[url('/assets/WhyUsHomeBg-clr.png')] "
+      className=" mt-8  flex flex-col items-center justify-between w-full min-h-[50vh] sm:min-h-[40vh] md:h-[80vh] bg-cover bg-center lg:p-4 py-6 transition-all duration-500 ease-in-out bg-[url('/assets/WhyUsHomeBg-bw.png')] hover:bg-[url('/assets/WhyUsHomeBg-clr.png')] "
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -60,7 +60,7 @@ const WhyUsHome = () => {
         data-aos="fade-up"
       >
         <h1
-          className={`w-11/12 sm:w-9/12 lg:w-7/12 text-[5vw] text-start ${playfairDisplay.className} text-white font-bold leading-[30px] sm:leading-[55px] lg:leading-[80px]`}
+          className={`w-11/12 sm:w-9/12 lg:w-7/12 text-[8vw] leading-[10vw] sm:leading-[5vw] sm:text-[5vw] text-start ${playfairDisplay.className} text-white font-bold leading-[30px] sm:leading-[55px] lg:leading-[80px]`}
         >
           Experience the Revolution in Cinema
         </h1>
@@ -72,7 +72,7 @@ const WhyUsHome = () => {
           WATCH NOW
         </button>
         <p
-          className={`text-[1vw] bg-black bg-opacity-40 sm:bg-transparent sm:bg-none w-full mt-4 text-center text-white ${gabirato.className} sm:px-12`}
+          className={`text-[3vw] md:text-[1vw] bg-black bg-opacity-40 sm:bg-transparent sm:bg-none w-full mt-4 text-center text-white ${gabirato.className} sm:px-12`}
         >
           Ready for an unforgettable cinematic journey? Watch the trailer for
           our debut action film now and get a taste of what’s to come. Join us

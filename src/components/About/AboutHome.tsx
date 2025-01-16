@@ -369,8 +369,8 @@ const AboutHome = () => {
             >
               <p
                 className="text-start
-                              text-[clamp(8px,1.05vw,30px)]
-
+                              sm:text-[clamp(8px,1.05vw,30px)]
+                            text-[1.7vw]
               leading-auto
             bg-black
             h-full 
@@ -408,7 +408,7 @@ const AboutHome = () => {
 
         <div
           id="films"
-          className="     grid grid-cols-1 xl:grid-cols-2 gap-8 justify-between w-full lg:py-8  "
+          className="   mt-8  grid grid-cols-1 xl:grid-cols-2 gap-8 justify-between w-full lg:py-8  "
         >
           {/* Image with hover effect */}
           <div
