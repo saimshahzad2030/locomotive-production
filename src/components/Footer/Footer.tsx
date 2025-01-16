@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex flex-row-reverse sm:flex-row item-start sm:items-center justify-evenly w-full py-4 text-white">
+    <div className="    flex flex-row-reverse sm:flex-row item-start sm:items-center justify-evenly w-full py-4 text-white">
       <div className="w-6/12 sm:w-3/12  text-[11px] sm:text-auto">
         <p>Legal and copyright info</p>
       </div>

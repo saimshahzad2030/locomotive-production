@@ -9,12 +9,14 @@ export default {
   theme: {
     extend: {
       screens: {
+        "custom-xl": { raw: "(min-width: 1280px) and (min-height: 720px)" },
         'xs': '520px',
         'xl-2': '1400px',
         '3xl': '1750px',
         '4xl': '2000px',
         '5xl': '2250px',
         '6xl': '2500px',
+
       },
       colors: {
         background: "var(--background)",
