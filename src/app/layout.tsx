@@ -5,6 +5,7 @@ import CustomCursor from "@/components/CustomCursor/CustomCursor";
 import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import CursorShape from "@/components/CursorShape/CursorShape";
 
 export default function RootLayout({
   children,
@@ -22,7 +23,8 @@ export default function RootLayout({
       <title>Locomotive</title>
 
       <body className={` `}>
-        <CustomCursor />
+        {/* <CustomCursor /> */}
+        <CursorShape />
         {children}
       </body>
     </html>

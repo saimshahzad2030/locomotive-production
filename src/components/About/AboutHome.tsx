@@ -326,19 +326,18 @@ import WhyUsHome from "../WhyUs/WhyUsHome";
 
 const AboutHome = () => {
   return (
-    <div className="z-10 flex flex-col items-center w-full overflow-y-hidden">
+    <div className="  flex flex-col items-center w-full overflow-y-hidden">
+      {/* <div className="absolute top-[50vh] sm:top-[70vh]  left-0 w-screen h-full pointer-events-none z-50 backdrop-blur-sm bg-yellow-900 bg-opacity-85"></div> */}
+
       <div
-        className="sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center bg-black  absolute top-[50vh] sm:top-[100vh] px-8 lg:px-24 xl:px-32"
+        className="z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center bg-black    absolute top-[50vh] sm:top-[100vh] px-8 lg:px-24 xl:px-32"
         data-aos="fade-up"
       >
         <div
           id="about"
           className="    w-full sm:min-h-[40vh] lg:min-h-[90vh] flex flex-col items-center justify-center "
         >
-          <div
-            className="flex flex-col items-center w-full  bg-black"
-            // data-aos="fade-up"
-          >
+          <div className="flex flex-col items-center w-full  bg-black">
             <div
               className={`py-4 bg-black sm:hidden flex flex-col items-center   leading-[40px]  font-bold text-[40px]   text-white ${playfairDisplay.className} w-4/12`}
             >
@@ -410,7 +409,6 @@ const AboutHome = () => {
           id="films"
           className="   mt-8  grid grid-cols-1 xl:grid-cols-2 gap-8 justify-between w-full lg:py-8  "
         >
-          {/* Image with hover effect */}
           <div
             data-aos="fade-up"
             className=" relative w-full  bg-black   xl:min-h-[65vh] flex flex-col items-center justify-center"
@@ -427,7 +425,6 @@ const AboutHome = () => {
             />
           </div>
 
-          {/* Text Content */}
           <div
             data-aos="fade-up"
             className={`  hidden xl:flex flex-col items-center justify-end p-4 relative ${playfairDisplay.className} w-full   xl:h-[65vh]`}

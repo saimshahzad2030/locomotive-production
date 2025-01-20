@@ -13,9 +13,9 @@
     --foreground: #ededed;
   }
 }
-* {
-  cursor: none; /* Hide the default cursor */
-}
+/* * {
+  cursor: none; 
+} */
 body {
   /* color: var(--foreground);
   background: var(--background);
