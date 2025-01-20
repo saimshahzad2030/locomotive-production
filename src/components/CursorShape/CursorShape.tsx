@@ -2,13 +2,16 @@
 import React, { useEffect, useRef } from "react";
 
 const CursorShape = () => {
-  const canvasRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const position = useRef({ x: 0, y: 0 });
   const target = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return; // Ensure canvas is not null
     const ctx = canvas.getContext("2d");
+    if (!ctx) return; // Ensure context is available
+
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
@@ -17,7 +20,7 @@ const CursorShape = () => {
       canvas.height = window.innerHeight;
     };
 
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       target.current.x = e.clientX;
       target.current.y = e.clientY;
     };
@@ -34,7 +37,6 @@ const CursorShape = () => {
 
       // Draw the shape
       ctx.beginPath();
-      ctx.moveTo(position.current.x, position.current.y);
       ctx.arc(position.current.x, position.current.y, 40, 0, Math.PI * 2); // Adjust size and shape
       ctx.fillStyle = "rgba(249, 216, 68, 0.8)"; // Yellow color
       ctx.shadowColor = "rgba(249, 216, 68, 0.6)";
