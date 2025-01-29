@@ -18,6 +18,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const ThisIsNothingSection = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -80,16 +81,16 @@ const ThisIsNothingSection = () => {
                   <path
                     d="M5.5 5L11.7929 11.2929C12.1834 11.6834 12.1834 12.3166 11.7929 12.7071L5.5 19"
                     stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M13.5 5L19.7929 11.2929C20.1834 11.6834 20.1834 12.3166 19.7929 12.7071L13.5 19"
                     stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
@@ -97,15 +98,22 @@ const ThisIsNothingSection = () => {
             <img
               src="/assets/logo-movie.png"
               alt="Movie Logo"
-              className="w-7/12 h-auto mb-4"
+              className="w-6/12 h-auto mb-4"
             />
             <p className="text-center text-gray-300 text-sm">
-              The search of Amir begins after his sudden disappearance following
+              {/* The search of Amir begins after his sudden disappearance following
               a daring heist, leaving his lifelong companion Omar grappling with
               guilt and confusion. A malicious private detective looms overhead,
               revealing soul-shifting events, fueling Omar’s relentless quest
-              for vengeance against those responsible.
+              for vengeance against those responsible. */}
+              Our Upcoming Thrilling movie film, featuring blasting cast
             </p>
+            <Link
+              href={"https://thisisnothing.vercel.app/"}
+              className="p-2     hover:scale-105   rounded-md mt-2 transition   text-white underline "
+            >
+              Visit Site
+            </Link>
           </motion.div>
         </div>
 
