@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 
-const CursorShape = () => {
+const CursorShapeBlack = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const position = useRef({ x: 0, y: 0 });
   const target = useRef({ x: 0, y: 0 });
@@ -58,9 +58,9 @@ const CursorShape = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 pointer-events-none z-40"
+      className="fixed top-0 left-0 pointer-events-none z-30"
     />
   );
 };
 
-export default CursorShape;
+export default CursorShapeBlack;

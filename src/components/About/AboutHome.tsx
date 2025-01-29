@@ -323,19 +323,20 @@ import { playfairDisplay, zenAntiqueSoft } from "@/utils/fonts";
 import React from "react";
 import Footer from "../Footer/Footer";
 import WhyUsHome from "../WhyUs/WhyUsHome";
+import CursorShapeBlack from "../CursorShape/CursorShapeBlack";
 
 const AboutHome = () => {
   return (
     <div className="  flex flex-col items-center w-full overflow-y-hidden">
-      {/* <div className="absolute top-[50vh] sm:top-[70vh]  left-0 w-screen h-full pointer-events-none z-50 backdrop-blur-sm bg-yellow-900 bg-opacity-85"></div> */}
+      <div className="absolute top-[50vh] sm:top-[70vh]  left-0 w-screen h-full pointer-events-none z-50 backdrop-blur-sm bg-yellow-900 bg-opacity-85"></div>
 
       <div
-        className="z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center bg-black    absolute top-[50vh] sm:top-[100vh] px-8 lg:px-24 xl:px-32"
+        className="z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center   bg-black  absolute top-[50vh] sm:top-[100vh] px-8 lg:px-24 xl:px-32"
         data-aos="fade-up"
       >
         <div
           id="about"
-          className="    w-full sm:min-h-[40vh] lg:min-h-[90vh] flex flex-col items-center justify-center "
+          className="w-full sm:min-h-[40vh] lg:min-h-[90vh] flex flex-col items-center justify-center "
         >
           <div className="flex flex-col items-center w-full  bg-black">
             <div
