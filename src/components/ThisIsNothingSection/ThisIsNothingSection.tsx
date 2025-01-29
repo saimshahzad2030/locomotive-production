@@ -30,7 +30,7 @@ const ThisIsNothingSection = () => {
         <div className="relative w-full flex flex-row items-center justify-end">
           <motion.button
             onClick={() => setIsOpen(!isOpen)}
-            className="absolute right-[-50] bg-black bg-opacity-20  backdrop-blur-md border border-white/20 text-white h-12 w-24 rounded-full  flex flex-row items-center justify-start pl-4"
+            className="absolute right-[-100] bg-black bg-opacity-20  backdrop-blur-md border border-white/20 text-white h-12 w-24 rounded-full  flex flex-row items-center justify-start pl-4"
             whileHover={{ scale: 1.1 }}
           >
             <motion.span
