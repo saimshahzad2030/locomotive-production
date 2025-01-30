@@ -26,7 +26,7 @@ const ThisIsNothingSection = () => {
     setTimeout(() => {
       setIsOpen(true);
     }, Math.floor(Math.random() * (6 - 3) + 3) * 1000);
-  });
+  }, []);
   return (
     <div className="fixed left-0 w-full h-screen flex flex-col items-center justify-center z-30">
       <div className="flex flex-col items-center justify-end lg:justify-between h-auto   pt-8 w-full">
