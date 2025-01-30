@@ -58,7 +58,7 @@ const CursorShape = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 pointer-events-none z-40"
+      className="fixed top-0 left-0 pointer-events-none z-50"
     />
   );
 };

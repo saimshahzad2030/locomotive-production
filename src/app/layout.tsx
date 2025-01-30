@@ -24,7 +24,7 @@ export default function RootLayout({
 
       <body className={` `}>
         {/* <CustomCursor /> */}
-        <CursorShape />
+        {/* <CursorShape /> */}
         {children}
       </body>
     </html>

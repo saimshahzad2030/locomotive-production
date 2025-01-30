@@ -16,19 +16,23 @@
 
 // export default ThisIsNothingSection;
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 const ThisIsNothingSection = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  useEffect(() => {
+    setTimeout(() => {
+      setIsOpen(true);
+    }, Math.floor(Math.random() * (6 - 3) + 3) * 1000);
+  });
   return (
-    <div className="fixed left-0 w-full h-screen flex flex-col items-center justify-center z-40">
+    <div className="fixed left-0 w-full h-screen flex flex-col items-center justify-center z-30">
       <div className="flex flex-col items-center justify-end lg:justify-between h-auto   pt-8 w-full">
         {/* Animated Arrow Button */}
         <div className="relative w-full flex flex-row items-center justify-end">
-          <motion.button
+          {/* <motion.button
             onClick={() => setIsOpen(!isOpen)}
             className="absolute right-[0px] bg-black bg-opacity-20  backdrop-blur-md border border-white/20 text-white h-12 w-12 rounded-l-full  flex flex-row items-center justify-start pl-4"
             whileHover={{ scale: 1.1 }}
@@ -59,7 +63,7 @@ const ThisIsNothingSection = () => {
                 />
               </svg>
             </motion.span>
-          </motion.button>
+          </motion.button> */}
           <motion.div
             initial={{ x: "100%", opacity: 0 }}
             animate={isOpen ? { x: 0, opacity: 1 } : { x: "100%", opacity: 0 }}
@@ -109,10 +113,10 @@ const ThisIsNothingSection = () => {
               Our Upcoming Thrilling movie film, featuring blasting cast
             </p>
             <Link
-              href={"https://thisisnothing.vercel.app/"}
+              href={"/this-is-nothing"}
               className="p-2     hover:scale-105   rounded-md mt-2 transition   text-white underline "
             >
-              Visit Site
+              Checkout
             </Link>
           </motion.div>
         </div>

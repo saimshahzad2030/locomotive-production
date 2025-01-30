@@ -29,7 +29,9 @@ const Navbar = () => {
   return (
     <div
       className={`fixed top-0 w-full z-40 transition-colors duration-500 ${
-        isScrolled ? "bg-black" : "bg-white"
+        isScrolled
+          ? "bg-black  bg-opacity-30 backdrop-blur-md"
+          : "bg-white bg-opacity-30 backdrop-blur-md"
       }`}
     >
       <div
@@ -47,7 +49,22 @@ const Navbar = () => {
         <div
           className={`text-[14px] hidden md:flex flex-row items-center justify-evenly w-5/12 ${jomolhari.className} lg:text-[13px] 2xl:text-[22px] 3xl:text-[27px] 4xl:text-[32px] 5xl:text-[37px]`}
         >
-          {["Home", "About", "Films", "Contact Us"].map((link, index) => (
+          <Link
+            href={`/`}
+            className={`relative group font-bold transition-all ease-in-out duration-300 ${
+              isScrolled
+                ? "text-white hover:text-[#ffb41c]"
+                : ` hover:text-[#ffb41c]`
+            }`}
+          >
+            Home
+            <span
+              className={`${
+                isScrolled ? "bg-white" : "bg-black "
+              } absolute left-0 bottom-[-2px] w-0 h-[2px] transition-all duration-300 group-hover:w-full`}
+            ></span>
+          </Link>
+          {["About", "Contact Us"].map((link, index) => (
             <Link
               key={index}
               href={`#${link.toLowerCase()}`}
@@ -65,6 +82,21 @@ const Navbar = () => {
               ></span>
             </Link>
           ))}
+          <Link
+            href={`/this-is-nothing`}
+            className={`relative group font-bold transition-all ease-in-out duration-300 ${
+              isScrolled
+                ? "text-white hover:text-[#ffb41c]"
+                : ` hover:text-[#ffb41c]`
+            }`}
+          >
+            This is Nothing
+            <span
+              className={`${
+                isScrolled ? "bg-white" : "bg-black "
+              } absolute left-0 bottom-[-2px] w-0 h-[2px] transition-all duration-300 group-hover:w-full`}
+            ></span>
+          </Link>
         </div>
         <div className="md:hidden flex items-center mr-4">
           <button
