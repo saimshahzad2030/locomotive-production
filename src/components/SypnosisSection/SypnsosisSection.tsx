@@ -47,7 +47,7 @@ const SypnsosisSection = () => {
   return (
     <div className="z-30  container mx-auto w-full p-4 md:px-8">
       <div
-        className="z-30 relative flex flex-row items-center w-full min-h-[100vh] justify-evenly  "
+        className="z-30 relative flex flex-row items-center w-full min-h-[110vh] justify-evenly  "
         data-aos="fade-up"
       >
         <div className="  flex flex-col md:flex-row items-center justify-evenly w-full">

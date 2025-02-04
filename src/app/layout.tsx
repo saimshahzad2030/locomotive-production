@@ -23,7 +23,7 @@ export default function RootLayout({
       <title>Locomotive</title>
 
       <body className={` `}>
-        {/* <CustomCursor /> */}
+        <CustomCursor />
         {/* <CursorShape /> */}
         {children}
       </body>

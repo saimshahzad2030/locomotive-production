@@ -417,18 +417,18 @@ const AboutHome = () => {
             <img
               src="/assets/AboutSection-bg-image-clr.png"
               alt="about Bg"
-              className="xl:h-[65vh] w-full  h-auto transition-opacity opacity-100 duration-300  bg-contain bg-center z-10"
+              className="xl:h-[65vh] w-full  h-auto transition-opacity opacity-100 duration-300 object-cover  bg-cover bg-center z-10"
             />
             <img
               src="/assets/AboutSection-bg-image-bw.png"
               alt="about Bg"
-              className="xl:h-[65vh] w-full  h-auto transition-opacity duration-300 absolute bg-contain bg-center  hover:opacity-0 opacity-100 z-20"
+              className="xl:h-[65vh] w-full  h-auto transition-opacity duration-300 absolute object-cover bg-cover bg-center  hover:opacity-0 opacity-100 z-20"
             />
           </div>
 
           <div
             data-aos="fade-up"
-            className={`  hidden xl:flex flex-col items-center justify-end p-4 relative ${playfairDisplay.className} w-full   xl:h-[65vh]`}
+            className={`hidden xl:flex flex-col items-center justify-end p-4 relative ${playfairDisplay.className} w-full   xl:h-[65vh]`}
           >
             <div
               className="   absolute 
@@ -605,12 +605,12 @@ const AboutHome = () => {
               className="  mt-8 lg:mt-0 h-full relative    w-full   flex flex-row items-center justify-center  "
             >
               <img
-                className="rounded-2xl w-full xl:w-11/12 h-auto transition-opacity duration-300 absolute top-0 lg:top-auto     opacity-100 lg:z-40 z-30"
+                className="  w-full xl:w-11/12 h-auto transition-opacity duration-300 absolute top-0 lg:top-auto     opacity-100 lg:z-40 z-30"
                 src="/assets/AboutSection-side-image2-clr.png"
                 alt="About Image 2"
               />
               <img
-                className="rounded-2xl w-full xl:w-11/12 h-auto transition-opacity duration-300 lg:absolute top-0 lg:top-auto  hover:opacity-0 opacity-0 lg:opacity-100 lg:z-40"
+                className="  w-full xl:w-11/12 h-auto transition-opacity duration-300 lg:absolute top-0 lg:top-auto  hover:opacity-0 opacity-0 lg:opacity-100 lg:z-40"
                 src="/assets/AboutSection-side-image2-bw.png"
                 alt="About Image 2"
               />

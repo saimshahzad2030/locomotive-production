@@ -43,10 +43,10 @@ const CustomCursor = () => {
         position: "fixed",
         top: position.y,
         left: position.x,
-        width: "30px", // Increased radius
-        height: "30px", // Increased radius
+        width: "50px", // Increased radius
+        height: "50px", // Increased radius
         borderRadius: "50%",
-        backgroundColor: "rgba(249, 176, 26, 0.5)", // Add opacity for translucency
+        backgroundColor: "rgba(249, 176, 26, 0.7)", // Add opacity for translucency
         pointerEvents: "none",
         transform: "translate(-50%, -50%) scale(1.2)", // Slightly enlarge
         zIndex: 9999,
