@@ -64,7 +64,7 @@ const Navbar = () => {
               } absolute left-0 bottom-[-2px] w-0 h-[2px] transition-all duration-300 group-hover:w-full`}
             ></span>
           </Link>
-          {["About", "Contact Us"].map((link, index) => (
+          {["About"].map((link, index) => (
             <Link
               key={index}
               href={`#${link.toLowerCase()}`}
@@ -91,6 +91,21 @@ const Navbar = () => {
             }`}
           >
             This is Nothing
+            <span
+              className={`${
+                isScrolled ? "bg-white" : "bg-black "
+              } absolute left-0 bottom-[-2px] w-0 h-[2px] transition-all duration-300 group-hover:w-full`}
+            ></span>
+          </Link>
+          <Link
+            href={`#Contact`}
+            className={`relative group font-bold transition-all ease-in-out duration-300 ${
+              isScrolled
+                ? "text-white hover:text-[#ffb41c]"
+                : ` hover:text-[#ffb41c]`
+            }`}
+          >
+            Contact Us
             <span
               className={`${
                 isScrolled ? "bg-white" : "bg-black "
