@@ -331,7 +331,7 @@ const AboutHome = () => {
       <div className="absolute top-[50vh] sm:top-[70vh]  left-0 w-screen h-full pointer-events-none z-50 backdrop-blur-sm bg-yellow-900 bg-opacity-85"></div>
 
       <div
-        className="z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center   bg-black  absolute top-[50vh] sm:top-[100vh] px-8 lg:px-24 xl:px-32"
+        className="z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center   bg-black  absolute top-[70vh] sm:top-[100vh] px-8 lg:px-24 xl:px-32"
         data-aos="fade-up"
       >
         <div
@@ -592,7 +592,7 @@ const AboutHome = () => {
                 style={{
                   WebkitTextStroke: "4px",
                 }}
-                className={`p-4   py-8 text-center  border border-none justify-center text-black  bg-white  font-extrabold   text-[clamp(44px,12vw,30px)] 
+                className={`p-4   py-6 text-center  border border-none justify-center text-black  bg-white  font-extrabold   text-[clamp(44px,12vw,30px)] 
                   2xl:text-[clamp(60px,12vw,80px)]
                   uppercase ${zenAntiqueSoft.className}`}
               >

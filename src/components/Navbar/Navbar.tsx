@@ -166,7 +166,19 @@ const Navbar = () => {
           </button>
         </div>
         <div className="flex flex-col items-start space-y-8 pt-24 pl-8">
-          {["Home", "About", "Films", "Contact Us"].map((link, index) => (
+          <Link
+            href={`/`}
+            onClick={() => setIsMenuOpen(false)}
+            className="text-white text-xl font-bold tracking-wide transform -translate-x-10 opacity-0 transition-all duration-500 ease-in-out delay-200 hover:text-[#ffb41c]"
+            style={{
+              transform: isMenuOpen ? "translateX(0)" : "translateX(-100px)",
+              opacity: isMenuOpen ? 1 : 0,
+              transitionDelay: `${0 * 100}ms`,
+            }}
+          >
+            Home
+          </Link>
+          {["About"].map((link, index) => (
             <Link
               key={index}
               href={`/${link.toLowerCase().replace(" ", "-")}`}
@@ -181,6 +193,30 @@ const Navbar = () => {
               {link}
             </Link>
           ))}
+          <Link
+            href={`/this-is-nothing`}
+            onClick={() => setIsMenuOpen(false)}
+            className="text-white text-xl font-bold tracking-wide transform -translate-x-10 opacity-0 transition-all duration-500 ease-in-out delay-200 hover:text-[#ffb41c]"
+            style={{
+              transform: isMenuOpen ? "translateX(0)" : "translateX(-100px)",
+              opacity: isMenuOpen ? 1 : 0,
+              transitionDelay: `${2 * 100}ms`,
+            }}
+          >
+            This is Nothing
+          </Link>
+          <Link
+            href={`#`}
+            onClick={() => setIsMenuOpen(false)}
+            className="text-white text-xl font-bold tracking-wide transform -translate-x-10 opacity-0 transition-all duration-500 ease-in-out delay-200 hover:text-[#ffb41c]"
+            style={{
+              transform: isMenuOpen ? "translateX(0)" : "translateX(-100px)",
+              opacity: isMenuOpen ? 1 : 0,
+              transitionDelay: `${3 * 100}ms`,
+            }}
+          >
+            Contact Us
+          </Link>
         </div>
       </div>
     </div>

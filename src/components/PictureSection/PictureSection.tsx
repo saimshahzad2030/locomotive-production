@@ -113,7 +113,7 @@ const PictureSection = () => {
                   height={450}
                   className="w-full h-full object-cover"
                 />
-                <div className="z-20 absolute flex items-center justify-center w-16 h-8 bg-white bg-opacity-90 rounded-full">
+                <div className="z-20 absolute flex items-center justify-center w-8 h-4 sm:w-16 sm:h-8 bg-white bg-opacity-90 rounded-full">
                   <svg
                     className="w-40 h-40"
                     viewBox="0 -3 20 20"
