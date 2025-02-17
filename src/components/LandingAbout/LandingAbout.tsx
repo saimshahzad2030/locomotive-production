@@ -39,10 +39,10 @@ const LandingAbout = () => {
               >
                 At Locomotive
               </h1>
-              <p className="w-full text-[3vw] sm:w-7/12 leading-[5vw] sm:leading-[3vw]">
+              <p className="w-full text-[3vw] sm:text-[1.2vw] sm:w-8/12 leading-[5vw] sm:leading-[3vw]">
                 We Believe That Great Stories Have The Power To Move People
               </p>
-              <p className="w-full text-[3vw] sm:w-7/12 leading-[5vw] sm:leading-[3vw] mt-8">
+              <p className="w-full text-[3vw] sm:text-[1.2vw] sm:w-8/12 leading-[5vw] sm:leading-[3vw] mt-8">
                 Challenge Perspectives And Connect Us All
               </p>
             </div>
