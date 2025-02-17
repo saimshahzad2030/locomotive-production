@@ -1,5 +1,5 @@
 import CastSection from "@/components/Cast/CastSection";
-import LandingSection from "@/components/Landing copy/LandingSection";
+import LandingSection from "@/components/LandingCopy/LandingSection";
 import Navbar from "@/components/Navbar/Navbar";
 import PictureSection from "@/components/PictureSection/PictureSection";
 import SypnsosisSection from "@/components/SypnosisSection/SypnsosisSection";
