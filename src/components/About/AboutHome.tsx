@@ -2,7 +2,7 @@
 import { playfairDisplay, zenAntiqueSoft } from "@/utils/fonts";
 import React from "react";
 import Footer from "../Footer/Footer";
-import WhyUsHome from "../WhyUs/WhyUsHome"; 
+import WhyUsHome from "../WhyUs/WhyUsHome";
 
 const AboutHome = () => {
   return (
@@ -11,7 +11,7 @@ const AboutHome = () => {
 
       <div
         className="z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center   bg-black  absolute top-[70vh] sm:top-[100vh] px-8 lg:px-24 xl:px-32"
-        data-aos="fade-up"
+        // data-aos="fade-up"
       >
         <div
           id="about"

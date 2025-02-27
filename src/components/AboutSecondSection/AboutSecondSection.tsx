@@ -6,16 +6,16 @@ import WhyUsHome from "../WhyUs/WhyUsHome";
 const AboutSecondSection = () => {
   return (
     <div className="  flex flex-col items-center w-full overflow-y-hidden">
-      <div className="absolute top-[50vh] sm:top-[70vh]  left-0 w-screen h-full pointer-events-none z-50 backdrop-blur-sm bg-yellow-900 bg-opacity-85"></div>
+      <div className="absolute top-[50vh] sm:top-[70vh]  left-0 w-screen h-full pointer-events-none z-50 backdrop-blur-sm bg-opacity-85"></div>
 
       <div
-        className="z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center   bg-white  absolute top-[70vh] sm:top-[100vh] px-8 lg:px-20 xl:px-24"
-        data-aos="fade-up"
+        className="text-white z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center bg-gradient-to-b from-[#4D4D4D] to-black     absolute top-[70vh] sm:top-[100vh] px-8 lg:px-20 xl:px-24"
+        // data-aos="fade-up"
       >
         <div className="w-full sm:min-h-[40vh] lg:min-h-[90vh] flex flex-col lg:flex-row items-center justify-between  ">
           <div className="w-full lg:w-6/12 flex flex-col items-start  lg:min-h-[80vh] justify-between">
             <h1
-              className={`py-4  text-black    font-bold   ${playfairDisplay.className} w-4/12
+              className={`py-4  text-white    font-bold   ${playfairDisplay.className} w-4/12
                    text-[7vw] lg:text-[5vw] 
                   leading-[7vw] lg:leading-[5vw]
 
@@ -37,7 +37,7 @@ const AboutSecondSection = () => {
             <div className="relative flex flex-row justify-end w-full">
               <p
                 className="absolute left-0 lg:left-32  top-[60vh] lg:top-[80vh] -translate-y-1/2 -rotate-90 
-              origin-left text-lg  text-black px-4 whitespace-nowrap"
+              origin-left text-lg  text-white px-4 whitespace-nowrap"
               >
                 We are a bold new force in Middle Eastern cinema
               </p>
@@ -87,7 +87,7 @@ const AboutSecondSection = () => {
           </div>
         </div>
         <div className="   mt-8  flex flex-col items-center w-full lg:py-8  py-4">
-          <div className=" lg:h-[80vh] flex flex-col lg:flex-row items-center justify-between w-full">
+          <div className=" lg:h-[100vh] flex flex-col lg:flex-row items-center justify-between w-full">
             <div className="flex flex-col-reverse lg:flex-col items-center w-full lg:w-6/12">
               <p
                 className={`mb-2 font-bold text-[6vw] lg:text-[2.5vw] ${playfairDisplay.className}`}

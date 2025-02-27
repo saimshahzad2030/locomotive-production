@@ -2,11 +2,11 @@
 import { jomolhari } from "@/utils/fonts";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-
+import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const pathname = usePathname();
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -51,7 +51,9 @@ const Navbar = () => {
         >
           <Link
             href={`/`}
-            className={`relative group font-bold transition-all ease-in-out duration-300 ${
+            className={`relative group font-bold transition-all ease-in-out duration-300
+              ${pathname === "/" && "text-[#ffb41c]"}
+              ${pathname === "/about" && "text-white hover:text-[#ffb41c]"} ${
               isScrolled
                 ? "text-white hover:text-[#ffb41c]"
                 : ` hover:text-[#ffb41c]`
@@ -59,57 +61,80 @@ const Navbar = () => {
           >
             Home
             <span
-              className={`${
-                isScrolled ? "bg-white" : "bg-black "
-              } absolute left-0 bottom-[-2px] w-0 h-[2px] transition-all duration-300 group-hover:w-full`}
+              className={`
+                transition-all duration-300 
+                 ${pathname === "/about" && "bg-white group-hover:w-full"}
+                ${
+                  isScrolled ? "bg-white" : "bg-black "
+                } absolute left-0 bottom-[-2px] w-0 h-[2px]  group-hover:w-full`}
             ></span>
           </Link>
           {["About"].map((link, index) => (
             <Link
               key={index}
               href={`/${link.toLowerCase()}`}
-              className={`relative group font-bold transition-all ease-in-out duration-300 ${
-                isScrolled
-                  ? "text-white hover:text-[#ffb41c]"
-                  : ` hover:text-[#ffb41c]`
-              }`}
+              className={`relative group font-bold transition-all ease-in-out duration-300
+                 ${
+                   pathname === "/about" &&
+                   "text-[#ffb41c] hover:text-[#ffb41c]"
+                 }
+                ${
+                  isScrolled
+                    ? "text-white hover:text-[#ffb41c]"
+                    : ` hover:text-[#ffb41c]`
+                }`}
             >
               {link}
               <span
-                className={`${
+                className={`
+                transition-all duration-300 
+                 ${pathname === "/about" && "bg-white group-hover:w-full"}
+                ${
                   isScrolled ? "bg-white" : "bg-black "
-                } absolute left-0 bottom-[-2px] w-0 h-[2px] transition-all duration-300 group-hover:w-full`}
+                } absolute left-0 bottom-[-2px] w-0 h-[2px]  group-hover:w-full`}
               ></span>
             </Link>
           ))}
           <Link
             href={`/this-is-nothing`}
-            className={`relative group font-bold transition-all ease-in-out duration-300 ${
-              isScrolled
-                ? "text-white hover:text-[#ffb41c]"
-                : ` hover:text-[#ffb41c]`
-            }`}
+            className={`relative group font-bold transition-all ease-in-out duration-300 
+              ${pathname === "/this-is-nothing" && "text-[#ffb41c]"}
+
+               ${pathname === "/about" && "text-white hover:text-[#ffb41c]"}
+              ${
+                isScrolled
+                  ? "text-white hover:text-[#ffb41c]"
+                  : ` hover:text-[#ffb41c]`
+              }`}
           >
             This is Nothing
             <span
-              className={`${
-                isScrolled ? "bg-white" : "bg-black "
-              } absolute left-0 bottom-[-2px] w-0 h-[2px] transition-all duration-300 group-hover:w-full`}
+              className={`
+                transition-all duration-300 
+                 ${pathname === "/about" && "bg-white group-hover:w-full"}
+                ${
+                  isScrolled ? "bg-white" : "bg-black "
+                } absolute left-0 bottom-[-2px] w-0 h-[2px]  group-hover:w-full`}
             ></span>
           </Link>
           <Link
             href={`#Contact`}
-            className={`relative group font-bold transition-all ease-in-out duration-300 ${
-              isScrolled
-                ? "text-white hover:text-[#ffb41c]"
-                : ` hover:text-[#ffb41c]`
-            }`}
+            className={`relative group font-bold transition-all ease-in-out duration-300 
+               ${pathname === "/about" && "text-white hover:text-[#ffb41c]"}
+              ${
+                isScrolled
+                  ? "text-white hover:text-[#ffb41c]"
+                  : ` hover:text-[#ffb41c]`
+              }`}
           >
             Contact Us
             <span
-              className={`${
-                isScrolled ? "bg-white" : "bg-black "
-              } absolute left-0 bottom-[-2px] w-0 h-[2px] transition-all duration-300 group-hover:w-full`}
+              className={`
+                transition-all duration-300 
+                 ${pathname === "/about" && "bg-white group-hover:w-full"}
+                ${
+                  isScrolled ? "bg-white" : "bg-black "
+                } absolute left-0 bottom-[-2px] w-0 h-[2px]  group-hover:w-full`}
             ></span>
           </Link>
         </div>

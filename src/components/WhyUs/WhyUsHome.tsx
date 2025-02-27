@@ -57,7 +57,7 @@ const WhyUsHome = () => {
     >
       <div
         className="flex flex-col items-start w-full px-4 lg:p-0"
-        data-aos="fade-up"
+        // data-aos="fade-up"
       >
         <h1
           className={`w-11/12 sm:w-9/12 lg:w-7/12 text-[8vw] leading-[10vw] sm:leading-[5vw] sm:text-[5vw] text-start ${playfairDisplay.className} text-white font-bold leading-[30px] sm:leading-[55px] lg:leading-[80px]`}
