@@ -13,7 +13,10 @@ const AboutSecondSection = () => {
         // data-aos="fade-up"
       >
         <div className="w-full sm:min-h-[40vh] lg:min-h-[90vh] flex flex-col lg:flex-row items-center justify-between  ">
-          <div className="w-full lg:w-6/12 flex flex-col items-start  lg:min-h-[80vh] justify-between">
+          <div
+            className="w-full lg:w-6/12 flex flex-col items-start  lg:min-h-[80vh] justify-between"
+            data-aos="fade-right"
+          >
             <h1
               className={`py-4  text-white    font-bold   ${playfairDisplay.className} w-4/12
                    text-[7vw] lg:text-[5vw] 
@@ -41,22 +44,53 @@ const AboutSecondSection = () => {
               >
                 We are a bold new force in Middle Eastern cinema
               </p>
-              <img
+              <div
+                className=" relative w-11/12 lg:w-4/6 min-h-[60vh] sm:min-h-[40vh] lg:min-h-[80vh]  bg-black  flex flex-col items-center justify-center"
+                data-aos="fade-left"
+              >
+                <img
+                  src="/assets/WhyUsHomeBg-clr.png"
+                  alt="about image"
+                  className="w-full  h-full  object-cover transition-opacity opacity-100 duration-300    z-30"
+                />
+                <img
+                  src="/assets/WhyUsHomeBg-bw.png"
+                  alt="about image"
+                  className="w-full  h-full  object-cover transition-opacity duration-300 absolute     hover:opacity-0  opacity-100 z-40"
+                />
+              </div>
+              {/* <img
                 className="w-11/12 lg:w-4/6 min-h-[60vh] sm:min-h-[40vh] lg:min-h-[80vh] object-cover"
                 src="/assets/About-Section2-img.png"
-              />
+              /> */}
             </div>
           </div>
         </div>
 
         <div className="   mt-8  flex flex-col items-center w-full lg:py-8  ">
           <div className=" lg:h-[80vh] flex flex-col lg:flex-row items-center justify-between w-full">
-            <img
+            <div
+              className=" relative w-full  lg:w-6/12   lg:h-[80vh] bg-black  flex flex-col items-center justify-center"
+              data-aos="fade-right"
+            >
+              <img
+                src="/assets/About-Section3-img.png"
+                alt="about image"
+                className="w-full  h-full  object-cover transition-opacity opacity-100 duration-300    z-30"
+              />
+              <img
+                src="/assets/About-Section3-img-bw.png"
+                alt="about image"
+                className="w-full  h-full  object-cover transition-opacity duration-300 absolute     hover:opacity-0  opacity-100 z-40"
+              />
+            </div>
+            {/* <img
               src="/assets/About-Section3-img.png"
               className="w-full  lg:w-6/12   lg:h-[80vh] object-cover"
               alt="about 3rd image"
-            />
+            /> */}
             <p
+              data-aos="fade-left"
               className={`mt-4 lg:mt-0 w-full lg:w-5/12 text-[4vw] sm:text-[4vw] lg:text-[3vw] ${playfairDisplay.className}`}
             >
               At Locomotive, we elevate Middle Eastern cinema with authentic
@@ -67,17 +101,33 @@ const AboutSecondSection = () => {
         <div className="   mt-8  flex flex-col items-center w-full lg:py-8  ">
           <div className=" lg:h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between w-full">
             <p
+              data-aos="fade-right"
               className={`mt-6 lg:mt-0 w-full lg:w-5/12 text-[4vw] lg:text-[3vw] ${playfairDisplay.className}`}
             >
               Drawing from a diverse background and love for authentic
               storytelling.
             </p>
             <div className="flex flex-col items-center w-full lg:w-6/12">
-              <img
+              {/* <img
                 src="/assets/About-Section4-img.png"
                 className="w-full lg:w-11/12 h-auto lg:h-[80vh] object-cover"
                 alt="about 3rd image"
-              />
+              /> */}
+              <div
+                className=" relative w-full lg:w-11/12 h-auto lg:h-[80vh]  bg-black  flex flex-col items-center justify-center"
+                data-aos="fade-left"
+              >
+                <img
+                  src="/assets/About-Section4-img.png"
+                  alt="about image"
+                  className="w-full  h-full  object-cover transition-opacity opacity-100 duration-300    z-30"
+                />
+                <img
+                  src="/assets/About-Section4-img-bw.png"
+                  alt="about image"
+                  className="w-full  h-full  object-cover transition-opacity duration-300 absolute     hover:opacity-0  opacity-100 z-40"
+                />
+              </div>
               <p
                 className={`mt-2 font-bold text-[6vw] lg:text-[2.5vw] ${playfairDisplay.className}`}
               >
@@ -94,14 +144,30 @@ const AboutSecondSection = () => {
               >
                 Our Debut Film
               </p>
-              <img
+              <div
+                className=" relative w-full lg:w-11/12  lg:h-[80vh]  bg-black  flex flex-col items-center justify-center"
+                data-aos="fade-right"
+              >
+                <img
+                  src="/assets/About-Section5-img.png"
+                  alt="about image"
+                  className="w-full  h-full  object-cover transition-opacity opacity-100 duration-300    z-30"
+                />
+                <img
+                  src="/assets/About-Section5-img-bw.png"
+                  alt="about image"
+                  className="w-full  h-full  object-cover transition-opacity duration-300 absolute     hover:opacity-0  opacity-100 z-40"
+                />
+              </div>
+              {/* <img
                 src="/assets/About-Section5-img.png"
                 className="w-full lg:w-11/12  lg:h-[80vh] object-cover"
                 alt="about 3rd image"
-              />
+              /> */}
             </div>
             <div
               className={`w-full lg:w-5/12 lg:h-[75vh] flex flex-col items-start justify-end`}
+              data-aos="fade-left"
             >
               <p
                 className={` lg:w-11/12 mb-8 ${playfairDisplay.className} text-[4vw] lg:text-[1.6vw]`}

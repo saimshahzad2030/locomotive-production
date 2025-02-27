@@ -94,3 +94,10 @@ pointer-events: none;
     pointer-events: none;
   }
 }
+
+ @media (max-width: 767px){
+  .border-gradient-t-to-b::before{
+    right: 35%;
+
+  }
+ }
