@@ -5,8 +5,8 @@ import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const [isScrolled, setIsScrolled] = useState(pathname === "/contact-us");
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -118,7 +118,7 @@ const Navbar = () => {
             ></span>
           </Link>
           <Link
-            href={`#Contact`}
+            href={`/contact-us`}
             className={`relative group font-bold transition-all ease-in-out duration-300 
                ${pathname === "/about" && "text-white hover:text-[#ffb41c]"}
               ${
@@ -231,7 +231,7 @@ const Navbar = () => {
             This is Nothing
           </Link>
           <Link
-            href={`#`}
+            href={`/contact-us`}
             onClick={() => setIsMenuOpen(false)}
             className="text-white text-xl font-bold tracking-wide transform -translate-x-10 opacity-0 transition-all duration-500 ease-in-out delay-200 hover:text-[#ffb41c]"
             style={{
