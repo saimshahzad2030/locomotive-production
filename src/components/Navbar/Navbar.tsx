@@ -47,7 +47,7 @@ const Navbar = () => {
           />
         </div>
         <div
-          className={`text-[14px] hidden md:flex flex-row items-center justify-evenly w-5/12 ${jomolhari.className} lg:text-[13px] 2xl:text-[22px] 3xl:text-[27px] 4xl:text-[32px] 5xl:text-[37px]`}
+          className={`text-[14wpx] hidden md:flex flex-row items-center justify-evenly w-5/12 ${jomolhari.className} lg:text-[11px] 2xl:text-[18px] 3xl:text-[20px] 4xl:text-[25px] 5xl:text-[29px]`}
         >
           <Link
             href={`/`}

@@ -45,7 +45,7 @@ import React from "react";
 
 const SypnsosisSection = () => {
   return (
-    <div className="relative z-30  container mx-auto w-full p-4 md:px-8 overflow-x-hidden">
+    <div className="relative z-30  container mx-auto w-full p-4 md:px-8 overflow-x-hidden overflow-y-hidden">
       <div
         className="z-30 relative flex flex-row items-center w-full min-h-[110vh] justify-evenly  "
         data-aos="fade-up"

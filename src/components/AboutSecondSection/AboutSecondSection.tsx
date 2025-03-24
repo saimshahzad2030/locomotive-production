@@ -8,11 +8,11 @@ const AboutSecondSection = () => {
     <div className="  flex flex-col items-center w-full overflow-y-hidden">
       <div className="absolute top-[50vh] sm:top-[70vh]  left-0 w-screen h-full pointer-events-none z-50 backdrop-blur-sm bg-opacity-85"></div>
 
-      <div
-        className="text-white z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center bg-gradient-to-b from-[#4D4D4D] to-black     absolute top-[70vh] sm:top-[100vh] px-8 lg:px-20 xl:px-24"
-        // data-aos="fade-up"
-      >
-        <div className="w-full sm:min-h-[40vh] lg:min-h-[90vh] flex flex-col lg:flex-row items-center justify-between  ">
+      <div className="text-white z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center bg-gradient-to-b from-[#4D4D4D] to-black     absolute top-[70vh] sm:top-[100vh] px-8 lg:px-20 xl:px-24">
+        <div
+          data-aos="fade-up"
+          className="w-full sm:min-h-[40vh] lg:min-h-[90vh] flex flex-col lg:flex-row items-center justify-between  "
+        >
           <div
             className="w-full lg:w-6/12 flex flex-col items-start  lg:min-h-[80vh] justify-between"
             data-aos="fade-right"
@@ -26,12 +26,12 @@ const AboutSecondSection = () => {
             >
               TAHA ALHAMID
             </h1>
-            <p className="w-full lg:w-6/12">
+            <p className="w-full lg:w-6/12 text-[1.4vw]">
               Taha Alhamid, the founder of Locomotive, is a passionate filmmaker
               with a deep commitment to changing the landscape of cinema in the
               Middle East.
             </p>
-            <p>
+            <p className="text-[1.4vw]">
               Our films are not just meant to be watched—they’re meant to be
               lived
             </p>
@@ -91,7 +91,7 @@ const AboutSecondSection = () => {
             /> */}
             <p
               data-aos="fade-left"
-              className={`mt-4 lg:mt-0 w-full lg:w-5/12 text-[4vw] sm:text-[4vw] lg:text-[3vw] ${playfairDisplay.className}`}
+              className={`mt-4 lg:mt-0 w-full lg:w-5/12 text-[4vw] sm:text-[4vw] lg:text-[1.4vw] ${playfairDisplay.className}`}
             >
               At Locomotive, we elevate Middle Eastern cinema with authentic
               films that resonate deeply.
@@ -102,7 +102,7 @@ const AboutSecondSection = () => {
           <div className=" lg:h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between w-full">
             <p
               data-aos="fade-right"
-              className={`mt-6 lg:mt-0 w-full lg:w-5/12 text-[4vw] lg:text-[3vw] ${playfairDisplay.className}`}
+              className={`mt-6 lg:mt-0 w-full lg:w-5/12 text-[4vw] lg:text-[1.4vw] ${playfairDisplay.className}`}
             >
               Drawing from a diverse background and love for authentic
               storytelling.
@@ -170,7 +170,7 @@ const AboutSecondSection = () => {
               data-aos="fade-left"
             >
               <p
-                className={` lg:w-11/12 mb-8 ${playfairDisplay.className} text-[4vw] lg:text-[1.6vw]`}
+                className={` lg:w-11/12 mb-8 ${playfairDisplay.className} text-[4vw] lg:text-[1.4vw]`}
               >
                 Mariam Al Kaabi, our Executive Producer, plays a pivotal role in
                 bringing Locomotive’s vision to life. As a key investor, her
@@ -178,7 +178,7 @@ const AboutSecondSection = () => {
                 been instrumental in our journey.
               </p>
               <p
-                className={` lg:w-11/12  ${playfairDisplay.className} text-[4vw] lg:text-[1.6vw]`}
+                className={` lg:w-11/12  ${playfairDisplay.className} text-[4vw] lg:text-[1.4vw]`}
               >
                 Mariam’s belief in the power of storytelling and her commitment
                 to quality are integral to ensuring that every project we

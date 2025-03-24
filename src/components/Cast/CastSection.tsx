@@ -16,7 +16,7 @@ import { CAST } from "@/constants/Svgs/globals/constants";
 
 const CastSection = () => {
   return (
-    <div className="z-30 relative container mx-auto w-full p-4 md:px-8 bg-white">
+    <div className="z-30 relative container mx-auto w-full p-4 md:px-8 bg-white flex flex-col items-center justify-center">
       <div className="absolute top-[-60px] left-0 w-full h-20 bg-gradient-to-t from-white/95 to-transparent backdrop-blur-[15px] z-40 pointer-events-none"></div>
       <div className="absolute bottom-[-60px] left-0 w-full h-20 bg-gradient-to-b from-white/95 to-transparent backdrop-blur-[15px] z-40 pointer-events-none"></div>
 
