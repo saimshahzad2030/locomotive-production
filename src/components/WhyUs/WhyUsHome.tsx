@@ -60,14 +60,19 @@ const WhyUsHome = () => {
         // data-aos="fade-up"
       >
         <h1
-          className={`w-11/12 sm:w-9/12 lg:w-7/12 text-[8vw] leading-[10vw] sm:leading-[5vw] sm:text-[5vw] text-start ${playfairDisplay.className} text-white font-bold leading-[30px] sm:leading-[55px] lg:leading-[80px]`}
+          className={`w-11/12 sm:w-9/12 lg:w-7/12
+            
+                             text-[clamp(30px,7vw,75px)]
+                             2xl:text-[clamp(30px,12vw,120px)]
+                              2xl:leading-[clamp(30px,12vw,120px)]
+             text-start ${playfairDisplay.className} text-white font-bold leading-[30px] sm:leading-[55px] lg:leading-[80px]`}
         >
           Experience the Revolution in Cinema
         </h1>
       </div>
       <div className="flex flex-col items-center w-full" data-aos="fade-up">
         <button
-          className={`bg-white text-black rounded-lg p-2 ${lexend.className}`}
+          className={`bg-white text-black text-sm 2xl:text-[20px] 2xl:p-2 rounded-lg w-[120px] px-2  p-1 xl:w-[160px] ${lexend.className}`}
         >
           WATCH NOW
         </button>

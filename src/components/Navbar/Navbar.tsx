@@ -39,15 +39,17 @@ const Navbar = () => {
           isScrolled ? "  border-b-white" : "  border-b-black"
         }   border-b-[0.5px] `}
       >
-        <div className="flex flex-row items-center">
+        <div className="absolute left-8 flex flex-row items-center h-12  4xl:h-16 ">
           <img
-            className="absolute left-8 h-12  4xl:h-16 w-auto drop-shadow-[0_4px_2px_rgba(0,0,0,0.5)]"
+            className="h-full  w-auto drop-shadow-[0_4px_2px_rgba(0,0,0,0.5)] p-2"
             src="/assets/logo-nav.png"
             alt="logo"
           />
         </div>
         <div
-          className={`text-[14wpx] hidden md:flex flex-row items-center justify-evenly w-5/12 ${jomolhari.className} lg:text-[11px] 2xl:text-[18px] 3xl:text-[20px] 4xl:text-[25px] 5xl:text-[29px]`}
+          className={`text-[14wpx] hidden md:flex flex-row items-center justify-evenly w-5/12 ${jomolhari.className} 
+              text-[clamp(10px,0.9vw,30px)] 
+             `}
         >
           <Link
             href={`/`}

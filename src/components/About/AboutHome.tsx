@@ -10,12 +10,12 @@ const AboutHome = () => {
       <div className="absolute top-[50vh] sm:top-[70vh]  left-0 w-screen h-full pointer-events-none z-50 backdrop-blur-sm bg-yellow-900 bg-opacity-85"></div>
 
       <div
-        className="z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center   bg-black  absolute top-[70vh] sm:top-[100vh] px-8 lg:px-24 xl:px-32"
+        className="z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center   bg-red-400  absolute top-[70vh] sm:top-[100vh] px-8 lg:px-[5%]  xl:px-[10%]"
         // data-aos="fade-up"
       >
         <div
           id="about"
-          className="w-full sm:min-h-[40vh] lg:min-h-[90vh] flex flex-col items-center justify-center "
+          className="w-full sm:min-h-[40vh] lg:min-h-[80vh] flex flex-col items-center justify-center "
         >
           <div className="flex flex-col items-center w-full  bg-black">
             <div
@@ -26,12 +26,14 @@ const AboutHome = () => {
               <h1 className={`  opacity-25`}>ABOUT</h1>
             </div>
           </div>
-          <div className="  grid grid-cols-2 sm:gap-4 lg:gap-8 xl:gap-16 sm:grid-cols-3 w-full items-center justify-between  sm:min-h-[40vh] lg:min-h-[100vh]">
+          <div className="  grid grid-cols-2 sm:gap-[4%] lg:gap-[4%] xl:gap-[6%] sm:grid-cols-3 w-full items-center justify-between  sm:min-h-[40vh] lg:min-h-[100vh]">
             <div
               className={`hidden sm:flex flex-col items-center justify-center font-bold
-                 text-[7.5vw]
+                                              sm:text-[clamp(6vw,7.9vw,10vw)] 
+
                 lg:min-h-[50vh]
                 lg:max-h-[50vh]
+                
                  leading-[7vw]
                   
  h-full
@@ -44,11 +46,12 @@ const AboutHome = () => {
             </div>
             <div
               data-aos="fade-up"
-              className={` pr-4 sm:pr-0 sm:min-h-[40vh] lg:min-h-[40vh]  bg-black  w-full   flex flex-col items-center justify-center  text-white ${playfairDisplay.className}`}
+              className={` pr-4 sm:pr-0 sm:min-h-[40vh] lg:min-h-[55vh]  bg-black  w-full   flex flex-col items-center justify-center  text-white ${playfairDisplay.className}`}
             >
               <p
                 className=" 
-                              sm:text-[clamp(8px,1.05vw,30px)]
+                              sm:text-[clamp(7px,1.10vw,24px)] 
+                              
                             text-[1.7vw]
               leading-auto
             bg-black
@@ -245,8 +248,8 @@ const AboutHome = () => {
               data-aos="fade-up"
               className={`    sm:py-0
                 flex flex-col items-start justify-center py-4 w-full pt-8 lg:pt-0
-                      text-white    text-[clamp(9px,0.9vw,16px)] 
-                      2xl:text-[clamp(16px,1vw,24px)] 
+                      text-white    text-[clamp(9px,0.9vw,13px)] 
+                   2xl:text-[clamp(16px,0.9vw,22px)]
               lg:h-[70vh]
                text-justify  tracking-[1px]
 
@@ -277,8 +280,9 @@ const AboutHome = () => {
                 style={{
                   WebkitTextStroke: "4px",
                 }}
-                className={`p-4   py-6 text-center  border border-none justify-center text-black  bg-white  font-extrabold   text-[clamp(50px,12vw,36px)] 
-                  2xl:text-[clamp(70px,12vw,90px)]
+                className={`p-4   py-6 text-center  border border-none justify-center text-black  bg-white  font-extrabold   
+                  text-[clamp(30px,12vw,50px)] 
+                  2xl:text-[clamp(50px,11vw,75px)]
                   uppercase ${zenAntiqueSoft.className}`}
               >
                 Setting <br /> New <br />
@@ -290,12 +294,12 @@ const AboutHome = () => {
               className="  mt-8 lg:mt-0 h-full relative    w-full   flex flex-row items-center justify-center  "
             >
               <img
-                className=" w-full h-auto transition-opacity duration-300 absolute top-0 lg:top-auto     opacity-100 lg:z-40 z-30"
+                className=" 2xl:w-[90%] w-full h-auto transition-opacity duration-300 absolute top-0 lg:top-auto     opacity-100 lg:z-40 z-30"
                 src="/assets/AboutSection-side-image2-clr.png"
                 alt="About Image 2"
               />
               <img
-                className=" w-full h-auto transition-opacity duration-300 lg:absolute top-0 lg:top-auto  hover:opacity-0 opacity-0 lg:opacity-100 lg:z-40"
+                className=" 2xl:w-[90%] w-full h-auto transition-opacity duration-300 lg:absolute top-0 lg:top-auto  hover:opacity-0 opacity-0 lg:opacity-100 lg:z-40"
                 src="/assets/AboutSection-side-image2-bw.png"
                 alt="About Image 2"
               />
