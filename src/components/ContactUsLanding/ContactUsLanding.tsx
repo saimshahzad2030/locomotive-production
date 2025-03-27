@@ -16,7 +16,7 @@ const ContactUsLanding = () => {
 
       <div
         data-aos="fade-right"
-        className="  h-[50vh] border border-r-white border-t-0 border-l-0 relative w-full md:w-6/12 flex flex-col items-center justify-center sm:h-[100vh] bg-white/10 backdrop-blur-2xl p-8 shadow-[inset_0_0_20px_rgba(255,255,255,0.5)]"
+        className="  h-[50vh] border border-r-white border-t-0 border-l-0 relative w-full md:w-6/12 flex flex-col items-center justify-center sm:h-[100vh] bg-white/0 backdrop-blur-xl p-8 shadow-[inset_0_0_20px_rgba(255,255,255,0.5)]"
       >
         <img className="w-32 h-auto" src="/assets/logo-nav.png" alt="logo" />
         <h1 className="text-white text-6xl font-bold text-center  ">

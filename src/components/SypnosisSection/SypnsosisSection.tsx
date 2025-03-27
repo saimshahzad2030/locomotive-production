@@ -61,7 +61,9 @@ const SypnsosisSection = () => {
             className="mt-8 md:mt-0 flex flex-col items-start w-full md:w-4/12 text-white"
             data-aos="fade-left"
           >
-            <p className={`${playfairDisplay.className} uppercase`}>
+            <p
+              className={`${playfairDisplay.className} leading-7 uppercase text-justify  tracking-[1px]`}
+            >
               The search of Amir begins after his sudden disappearance following
               a daring heist, leaving his lifelong companion Omar grappling with
               guilt and confusion. A malicious private detective looms overhead,

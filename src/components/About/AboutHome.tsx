@@ -29,7 +29,7 @@ const AboutHome = () => {
           <div className="  grid grid-cols-2 sm:gap-4 lg:gap-8 xl:gap-16 sm:grid-cols-3 w-full items-center justify-between  sm:min-h-[40vh] lg:min-h-[100vh]">
             <div
               className={`hidden sm:flex flex-col items-center justify-center font-bold
-                 text-[7vw]
+                 text-[7.5vw]
                 lg:min-h-[50vh]
                 lg:max-h-[50vh]
                  leading-[7vw]
@@ -47,12 +47,14 @@ const AboutHome = () => {
               className={` pr-4 sm:pr-0 sm:min-h-[40vh] lg:min-h-[40vh]  bg-black  w-full   flex flex-col items-center justify-center  text-white ${playfairDisplay.className}`}
             >
               <p
-                className="text-start
+                className=" 
                               sm:text-[clamp(8px,1.05vw,30px)]
                             text-[1.7vw]
               leading-auto
             bg-black
             h-full 
+               text-justify  tracking-[1px]
+
            "
               >
                 At Locomotive, we believe in the power of storytelling. Founded
@@ -68,7 +70,7 @@ const AboutHome = () => {
             </div>
 
             <div
-              className=" relative w-full lg:h-[50vh] bg-black  flex flex-col items-center justify-center"
+              className=" relative w-full lg:h-[55vh] bg-black  flex flex-col items-center justify-center"
               data-aos="fade-up"
             >
               <img
@@ -153,6 +155,7 @@ const AboutHome = () => {
                 2xl:text-[clamp(20px,1.35vw,34px)]
                 custom-xl:text-[clamp(18px,1.25vw,30px)]
               leading-auto
+               text-justify  tracking-[1px]
                `}
             >
               When you watch our debut action film, you're not just observing a
@@ -217,7 +220,9 @@ const AboutHome = () => {
               2xl:leading-[50px]
               text-justify
               4xl:leading-auto
-              4xl:text-xl`}
+              4xl:text-xl
+              
+              `}
               >
                 When you watch our debut action film, you're not just observing
                 a story—you’re entering a world that feels real. Every scene,
@@ -240,10 +245,11 @@ const AboutHome = () => {
               data-aos="fade-up"
               className={`    sm:py-0
                 flex flex-col items-start justify-center py-4 w-full pt-8 lg:pt-0
-                      text-white  text-start
-                      text-[clamp(9px,0.9vw,16px)] 
+                      text-white    text-[clamp(9px,0.9vw,16px)] 
                       2xl:text-[clamp(16px,1vw,24px)] 
               lg:h-[70vh]
+               text-justify  tracking-[1px]
+
                 ${playfairDisplay.className}`}
             >
               <p>
@@ -271,8 +277,8 @@ const AboutHome = () => {
                 style={{
                   WebkitTextStroke: "4px",
                 }}
-                className={`p-4   py-6 text-center  border border-none justify-center text-black  bg-white  font-extrabold   text-[clamp(44px,12vw,30px)] 
-                  2xl:text-[clamp(60px,12vw,80px)]
+                className={`p-4   py-6 text-center  border border-none justify-center text-black  bg-white  font-extrabold   text-[clamp(50px,12vw,36px)] 
+                  2xl:text-[clamp(70px,12vw,90px)]
                   uppercase ${zenAntiqueSoft.className}`}
               >
                 Setting <br /> New <br />
@@ -284,12 +290,12 @@ const AboutHome = () => {
               className="  mt-8 lg:mt-0 h-full relative    w-full   flex flex-row items-center justify-center  "
             >
               <img
-                className="  w-full xl:w-11/12 h-auto transition-opacity duration-300 absolute top-0 lg:top-auto     opacity-100 lg:z-40 z-30"
+                className=" w-full h-auto transition-opacity duration-300 absolute top-0 lg:top-auto     opacity-100 lg:z-40 z-30"
                 src="/assets/AboutSection-side-image2-clr.png"
                 alt="About Image 2"
               />
               <img
-                className="  w-full xl:w-11/12 h-auto transition-opacity duration-300 lg:absolute top-0 lg:top-auto  hover:opacity-0 opacity-0 lg:opacity-100 lg:z-40"
+                className=" w-full h-auto transition-opacity duration-300 lg:absolute top-0 lg:top-auto  hover:opacity-0 opacity-0 lg:opacity-100 lg:z-40"
                 src="/assets/AboutSection-side-image2-bw.png"
                 alt="About Image 2"
               />

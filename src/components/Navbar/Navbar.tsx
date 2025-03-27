@@ -36,8 +36,8 @@ const Navbar = () => {
     >
       <div
         className={`px-8 w-full relative flex flex-row items-center md:justify-center justify-between py-4 ${
-          isScrolled ? "border-b-white" : "border-b-black"
-        }  border-b-[0.5px]`}
+          isScrolled ? "  border-b-white" : "  border-b-black"
+        }   border-b-[0.5px] `}
       >
         <div className="flex flex-row items-center">
           <img

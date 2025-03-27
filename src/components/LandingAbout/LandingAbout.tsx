@@ -19,11 +19,11 @@ const LandingAbout = () => {
 
           <div className="overflow-hidden p-2 md:px-4 lg:px-16  xl:px-24 flex flex-col md:flex-row items-center justify-center md:justify-between w-full  col-span-2 md:col-span-3 border-gradient-t-to-b  sm:h-[80vh] h-[50vh]">
             {/* <img
-              className="w-10/12 md:w-4/12 h-[20vh] md:h-2/3 object-cover border border-white"
+              className="w-10/12 md:w-4/12 h-[20vh] md:h-2/3 object-cover "
               src="/assets/About-landing-1.png"
             /> */}
             <div
-              className=" relative w-10/12 md:w-4/12 h-[20vh] md:h-2/3 border border-white bg-black  flex flex-col items-center justify-center"
+              className=" relative w-10/12 md:w-4/12 h-[20vh] md:h-2/3  bg-black  flex flex-col items-center justify-center"
               data-aos="fade-left"
             >
               <img
@@ -38,7 +38,7 @@ const LandingAbout = () => {
               />
             </div>
             <div
-              className=" relative mt-4 md:mt-0 w-10/12 md:w-7/12 h-[20vh] md:h-2/3  border border-white bg-black  flex flex-col items-center justify-center"
+              className=" relative mt-4 md:mt-0 w-10/12 md:w-7/12 h-[20vh] md:h-2/3   bg-black  flex flex-col items-center justify-center"
               data-aos="fade-left"
             >
               <img
@@ -53,7 +53,7 @@ const LandingAbout = () => {
               />
             </div>
             {/* <img
-              className="mt-4 md:mt-0 w-10/12 md:w-7/12 h-[20vh] md:h-2/3 object-cover border border-white"
+              className="mt-4 md:mt-0 w-10/12 md:w-7/12 h-[20vh] md:h-2/3 object-cover "
               src="/assets/About-landing-2.png"
             /> */}
           </div>
@@ -65,10 +65,10 @@ const LandingAbout = () => {
               >
                 At Locomotive
               </h1>
-              <p className="w-full text-[3vw] sm:text-[1.2vw] sm:w-8/12 leading-[5vw] sm:leading-[3vw]">
+              <p className="text-justify font-light w-full text-[3vw] sm:text-[1.2vw] sm:w-8/12 leading-[5vw] sm:leading-[3vw]">
                 We Believe That Great Stories Have The Power To Move People
               </p>
-              <p className="w-full text-[3vw] sm:text-[1.2vw] sm:w-8/12 leading-[5vw] sm:leading-[3vw] mt-8">
+              <p className=" text-justify font-light  w-full text-[3vw] sm:text-[1.2vw] sm:w-8/12 leading-[5vw] sm:leading-[3vw] mt-4">
                 Challenge Perspectives And Connect Us All
               </p>
             </div>

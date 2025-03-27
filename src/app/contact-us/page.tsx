@@ -7,8 +7,8 @@ export default function Contact() {
     <div className="relative w-full">
       <Navbar />
       <ContactUsLanding />
-      <ContactUsSecondSection />
-      <ContactUsFooter />
+      {/* <ContactUsSecondSection />
+      <ContactUsFooter /> */}
     </div>
   );
 }

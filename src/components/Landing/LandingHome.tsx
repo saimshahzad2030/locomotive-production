@@ -1,4 +1,3 @@
- 
 "use client";
 import { playfairDisplay } from "@/utils/fonts";
 import React from "react";
@@ -23,8 +22,11 @@ const LandingHome = () => {
           </h1>
 
           <p
-            className={`mt-4 w-11/12  text-[2vw] sm:text-[1.7vw]
-               sm:leading-[1.9vw] ${playfairDisplay.className}`}
+            className={`mt-4 w-full  text-[2vw] sm:text-[1.7vw]
+               sm:leading-[1.9vw] ${playfairDisplay.className}
+               
+               text-justify  tracking-[1px]
+               `}
           >
             Welcome to Locomotive, where we’re reshaping Middle Eastern cinema.
             Our debut action film, available in theaters and online, brings you
