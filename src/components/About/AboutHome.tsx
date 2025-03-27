@@ -10,7 +10,7 @@ const AboutHome = () => {
       <div className="absolute top-[50vh] sm:top-[70vh]  left-0 w-screen h-full pointer-events-none z-50 backdrop-blur-sm bg-yellow-900 bg-opacity-85"></div>
 
       <div
-        className="z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center   bg-red-400  absolute top-[70vh] sm:top-[100vh] px-8 lg:px-[5%]  xl:px-[10%]"
+        className="z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center   bg-black  absolute top-[70vh] sm:top-[100vh] px-8 lg:px-[5%]  xl:px-[10%]"
         // data-aos="fade-up"
       >
         <div
@@ -112,7 +112,7 @@ const AboutHome = () => {
 
           <div
             data-aos="fade-up"
-            className={`hidden xl:flex flex-col items-center justify-end p-4 relative ${playfairDisplay.className} w-full   xl:h-[65vh]`}
+            className={`hidden lg:flex flex-col items-center justify-end p-4 relative ${playfairDisplay.className} w-full   xl:h-[65vh]`}
           >
             <div
               className="   absolute 
@@ -172,7 +172,7 @@ const AboutHome = () => {
             </p>
           </div>
           <div
-            className={`  grid   xl:hidden grid-cols-3 p-4 relative ${playfairDisplay.className} w-full   xl:h-[80vh]`}
+            className={`  grid   lg:hidden grid-cols-3 p-4 relative ${playfairDisplay.className} w-full   xl:h-[80vh]`}
           >
             <div
               data-aos="fade-up"
