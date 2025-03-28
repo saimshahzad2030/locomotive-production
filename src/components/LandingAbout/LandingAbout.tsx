@@ -5,7 +5,7 @@ import React from "react";
 const LandingAbout = () => {
   return (
     <div className=" text-white fixed   left-0 w-full sm:h-[100vh] h-[70vh]    flex flex-col items-center justify-center   z-0  ">
-      <div className="flex flex-col items-center justify-between w-full sm:pt-24 bg-gradient-to-b from-black to-[#4D4D4D]">
+      <div className="flex flex-col items-center justify-between w-full sm:pt-24 bg-gradient-to-b from-black via-black to-[#FFBF35]">
         <div className="grid grid-cols-3 md:grid-cols-4   w-full sm:h-[100vh] h-[70vh]">
           <div className="relative pb-4 px-8 lg:px-16 xl:px-24 flex flex-col items-start justify-end w-full col-span-2 md:col-span-3 border-l-0 sm:h-[20vh] h-[20vh] border-gradient-l-to-r">
             <h1

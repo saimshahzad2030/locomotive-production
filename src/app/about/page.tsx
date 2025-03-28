@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar/Navbar";
 
 export default function About() {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full opacity-100">
       <Navbar />
       <LandingAbout />
       <AboutSecondSection />

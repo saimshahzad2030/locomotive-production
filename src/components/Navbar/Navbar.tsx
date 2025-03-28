@@ -39,7 +39,7 @@ const Navbar = () => {
           isScrolled ? "  border-b-white" : "  border-b-black"
         }   border-b-[0.5px] `}
       >
-        <div className="absolute left-8 flex flex-row items-center h-12  4xl:h-16 ">
+        <div className="absolute right-8 sm:right-auto sm:left-8 flex flex-row items-center h-12  4xl:h-16 ">
           <img
             className="h-full  w-auto drop-shadow-[0_4px_2px_rgba(0,0,0,0.5)] p-2"
             src="/assets/logo-nav.png"

@@ -281,7 +281,10 @@ const AboutHome = () => {
                   WebkitTextStroke: "4px",
                 }}
                 className={`p-4   py-6 text-center  border border-none justify-center text-black  bg-white  font-extrabold   
-                  text-[clamp(30px,12vw,50px)] 
+                                      text-[clamp(20px,9vw,40px)] 
+                  w-full
+                  md:w-auto
+                  md:text-[clamp(30px,12vw,50px)] 
                   2xl:text-[clamp(50px,11vw,75px)]
                   uppercase ${zenAntiqueSoft.className}`}
               >

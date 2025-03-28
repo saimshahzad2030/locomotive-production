@@ -12,7 +12,8 @@ const LandingHome = () => {
         >
           <h1
             className={`font-semibold 
-              text-[clamp(40px,5vw,120px)] 
+              md:text-[clamp(40px,5vw,120px)] 
+              text-[clamp(20px,5vw,50px)] 
 
                
                leading-[5vw]

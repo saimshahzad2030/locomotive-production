@@ -1,7 +1,7 @@
 "use client";
 import { lexend } from "@/utils/fonts";
 import { motion, useScroll, useTransform } from "framer-motion";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const LandingSection = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -12,7 +12,9 @@ const LandingSection = () => {
   const { scrollY } = useScroll();
   const scale = useTransform(scrollY, [0, 500], [1, 0.5]); // Shrinks as you scroll
   const opacity = useTransform(scrollY, [300, 500], [1, 0.3]); // Fades out at 50vh
-
+  useEffect(() => {
+    handleOpenDialog();
+  }, []);
   const handleOpenDialog = () => {
     setIsDialogOpen(true);
     setTimeout(() => {
