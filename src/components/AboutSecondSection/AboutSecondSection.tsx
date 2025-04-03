@@ -26,7 +26,7 @@ const AboutSecondSection = () => {
             data-aos="fade-right"
           >
             <h1
-              className={`py-4      font-bold   ${playfairDisplay.className} md:w-7/12
+              className={`py-4      font-normal   ${playfairDisplay.className} md:w-7/12
                 text-[12vw]   
                 leading-[12vw]   
                 sm:text-[7vw] lg:text-[4.6vw] 
@@ -35,7 +35,7 @@ const AboutSecondSection = () => {
                 `}
             >
               TAHA <br />
-              Bin Abdul rahman
+              Bin Abdulrahman
             </h1>
             <p className="w-full  text-[3.5vw] sm:text-[2vw]  lg:text-[1vw]">
               Taha Bin Abdulrahman is a passionate filmmaker, actor, and
@@ -55,7 +55,7 @@ const AboutSecondSection = () => {
               can collaborate and push bound.
             </p>
           </div>
-          <div className="mt-6 lg:mt-0 w-full lg:w-5/12 flex flex-col items-end sm:min-h-[40vh] lg:min-h-[80vh] justify-between">
+          <div className="  mt-6 lg:mt-0 w-full lg:w-5/12 flex flex-col items-end sm:min-h-[40vh] lg:min-h-[80vh] justify-between">
             <div className="  flex flex-col items-center w-full">
               <p
                 className={`mb-2 text-[5vw] md:text-[6vw] text-black lg:text-[2vw] ${playfairDisplay.className}`}
@@ -87,8 +87,8 @@ const AboutSecondSection = () => {
 
         <div
           className="  
-                   bg-gradient-to-b   from-[#FFBF35]   to-[#cf8d00]  
-
+                   bg-gradient-to-b   from-[#FFBF35]   via-[#cf8d00] to-black  
+ 
         
         pt-8  flex flex-col items-center w-full lg:py-8    px-8 lg:px-20 xl:px-24"
         >
@@ -126,16 +126,16 @@ const AboutSecondSection = () => {
             </p>
           </div>
         </div>
-        <div className=" bg-gradient-to-b  from-[#cf8d00]       via-black  to-black  pt-8  flex flex-col items-center w-full lg:py-8    px-8 lg:px-20 xl:px-24">
-          <div className=" lg:h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between w-full">
+        <div className="  bg-gradient-to-b   from-black     via-black  to-black  pt-8  flex flex-col items-center w-full lg:py-8    px-8 lg:px-20 xl:px-24">
+          <div className="lg:mt-20 lg:h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between w-full">
             <p
               data-aos="fade-right"
-              className={`mt-6  text-white text-center lg:mt-0 w-full lg:w-5/12 text-[3.5vw] md:text-[4vw] lg:text-[2.4vw] ${playfairDisplay.className}`}
+              className={`mt-6  text-white text-center lg:mt-0 w-full lg:w-4/12 text-[3.5vw] md:text-[4vw] lg:text-[2.4vw] ${playfairDisplay.className}`}
             >
               Drawing from a diverse background and love for authentic
               storytelling.
             </p>
-            <div className="flex flex-col items-center w-full lg:w-6/12">
+            <div className="flex flex-col items-center w-full lg:w-8/12">
               {/* <img
                 src="/assets/About-Section4-img.png"
                 className="w-full lg:w-11/12 h-auto lg:h-[80vh] object-cover"
@@ -164,7 +164,7 @@ const AboutSecondSection = () => {
             </div>
           </div>
         </div>
-        <div className="text-white text-center bg-black  pt-8  flex flex-col items-center w-full lg:py-8  py-4  px-8 lg:px-20 xl:px-24">
+        <div className="  text-white text-center bg-black  pt-8  flex flex-col items-center w-full lg:py-8  py-4  px-8 lg:px-20 xl:px-24">
           <div className=" lg:h-[100vh] flex flex-col lg:flex-row items-center justify-between w-full">
             <div
               className="flex flex-col-reverse lg:flex-col items-center w-full lg:w-6/12"
