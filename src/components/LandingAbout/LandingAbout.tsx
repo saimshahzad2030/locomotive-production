@@ -4,7 +4,7 @@ import React from "react";
 
 const LandingAbout = () => {
   return (
-    <div className=" p-20  text-white fixed   left-0 w-full sm:h-[100vh] h-[70vh] bg-gradient-to-b from-black via-black to-[#FFBF35]   flex flex-col items-center justify-center   z-0  ">
+    <div className=" p-20  text-white fixed   left-0 w-full sm:h-[100vh] h-[70vh] bg-gradient-to-b from-black via-black to-black   flex flex-col items-center justify-center   z-0  ">
       <div className="flex flex-col items-center justify-between w-full sm:pt-24 ">
         <div className="grid grid-cols-3 md:grid-cols-4   w-full sm:h-[100vh] h-[70vh]">
           <div className="relative pb-4 px-8 lg:px-16 xl:px-24 flex flex-col items-start justify-end w-full col-span-2 md:col-span-3 border-l-0 sm:h-[20vh] h-[20vh] border-gradient-l-to-r">
@@ -21,18 +21,18 @@ const LandingAbout = () => {
               src="/assets/About-landing-1.png"
             /> */}
             <div
-              className=" relative w-10/12 md:w-4/12 h-[20vh] md:h-2/3  bg-black  flex flex-col items-center justify-center"
+              className="mr-10 relative w-10/12 md:w-5/12 h-[20vh] md:h-2/3    flex flex-col items-center justify-center"
               data-aos="fade-left"
             >
               <img
-                src="/assets/WhyUsHomeBg-bw.png"
-                alt="about image"
-                className="w-full  h-full  object-cover transition-opacity opacity-100 duration-300    z-30"
-              />
-              <img
                 src="/assets/WhyUsHomeBg-clr.png"
                 alt="about image"
-                className="w-full  h-full  object-cover transition-opacity duration-300 absolute     hover:opacity-0  opacity-100 z-40"
+                className="  w-full  h-full  object-cover transition-opacity opacity-100 duration-300    z-30"
+              />
+              <img
+                src="/assets/WhyUsHomeBg-bw.png"
+                alt="about image"
+                className=" w-full  h-full  object-cover transition-opacity duration-300 absolute     hover:opacity-0  opacity-100 z-40"
               />
             </div>
             <div

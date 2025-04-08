@@ -9,12 +9,14 @@ const AboutSecondSection = () => {
       style={{ opacity: 1 }}
       className="  flex flex-col items-center w-full overflow-x-hidden overflow-y-hidden o "
     >
-      {/* <div className="absolute top-[50vh] sm:top-[70vh]  left-0 w-screen h-full pointer-events-none z-50 backdrop-blur-sm bg-opacity-100"></div> */}
+      <div
+        data-aos="fade-up"
+        className="  bg-opacity-100 opac text-black z-20   overflow-y-hidden overflow-x-hidden  flex flex-col items-center justify-center   absolute top-[70vh] sm:top-[100vh]"
+      >
+        <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-black/10  to-[#D9A433] z-10 pointer-events-none" />
 
-      <div className="bg-opacity-100 opac text-black z-20 sm:pt-4 overflow-y-hidden overflow-x-hidden  flex flex-col items-center justify-center   absolute top-[70vh] sm:top-[100vh]">
         <div
-          data-aos="fade-up"
-          className="
+          className=" mt-64
           bg-opacity-100 opacity-100
                        bg-gradient-to-b from-[#D9A433] to-[#FFBF35]
 
@@ -87,7 +89,7 @@ const AboutSecondSection = () => {
 
         <div
           className="  
-                   bg-gradient-to-b   from-[#FFBF35]   via-[#cf8d00] to-black  
+                   bg-gradient-to-b   from-[#FFBF35]   to-[#875d00] 
  
         
         pt-8  flex flex-col items-center w-full lg:py-8    px-8 lg:px-20 xl:px-24"
@@ -126,7 +128,9 @@ const AboutSecondSection = () => {
             </p>
           </div>
         </div>
-        <div className="  bg-gradient-to-b   from-black     via-black  to-black  pt-8  flex flex-col items-center w-full lg:py-8    px-8 lg:px-20 xl:px-24">
+        <div className="pt-16 relative  bg-gradient-to-b   from-black     via-black  to-black    flex flex-col items-center w-full lg:py-8    px-8 lg:px-20 xl:px-24">
+          <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-[#875d00] to-black/15 z-5 pointer-events-none" />
+
           <div className="lg:mt-20 lg:h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between w-full">
             <p
               data-aos="fade-right"
