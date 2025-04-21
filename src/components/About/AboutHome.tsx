@@ -10,7 +10,7 @@ const AboutHome = () => {
       <div className="absolute top-[50vh] sm:top-[70vh]  left-0 w-screen h-full pointer-events-none z-50 backdrop-blur-sm bg-yellow-900 bg-opacity-85"></div>
 
       <div
-        className="z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center   bg-black  absolute top-[70vh] sm:top-[100vh] px-8 lg:px-[5%]  xl:px-[10%]"
+        className="z-20 sm:pt-4 overflow-y-hidden  flex flex-col items-center justify-center   bg-black  absolute top-[70vh] sm:top-[100vh] px-8 lg:px-[5%]  lg-1:px-[10%]"
         // data-aos="fade-up"
       >
         <div
@@ -26,7 +26,7 @@ const AboutHome = () => {
               <h1 className={`  opacity-25`}>ABOUT</h1>
             </div>
           </div>
-          <div className="  grid grid-cols-2 sm:gap-[4%] lg:gap-[4%] xl:gap-[6%] sm:grid-cols-3 w-full items-center justify-between  sm:min-h-[40vh] lg:min-h-[100vh]">
+          <div className="  grid grid-cols-2 sm:gap-[4%] lg:gap-[4%] lg-1:gap-[6%] sm:grid-cols-3 w-full items-center justify-between  sm:min-h-[40vh] lg:min-h-[100vh]">
             <div
               className={`hidden sm:flex flex-col items-center justify-center font-bold
                                               sm:text-[clamp(6vw,7.9vw,10vw)] 
@@ -92,11 +92,11 @@ const AboutHome = () => {
 
         <div
           id="films"
-          className="   mt-8  grid grid-cols-1 xl:grid-cols-2 gap-8 justify-between w-full lg:py-8  "
+          className="   mt-8  grid grid-cols-1 lg-1:grid-cols-2 gap-8 justify-between w-full lg:py-8  "
         >
           <div
             data-aos="fade-up"
-            className=" relative w-full  bg-black   xl:min-h-[65vh] flex flex-col items-center justify-center"
+            className=" relative w-full  bg-black   lg-1:min-h-[65vh] flex flex-col items-center justify-center"
           >
             <img
               src="/assets/AboutSection-bg-image-clr.png"
@@ -112,12 +112,12 @@ const AboutHome = () => {
 
           <div
             data-aos="fade-up"
-            className={`hidden lg:flex flex-col items-center justify-end p-4 relative ${playfairDisplay.className} w-full   xl:h-[65vh]`}
+            className={`hidden lg:flex flex-col items-center justify-end p-4 relative ${playfairDisplay.className} w-full   lg-1:h-[65vh]`}
           >
             <div
               className="   absolute 
-            left-[10%] xl:left-auto
-             top-0 sm:top-[10px] xl:top-[-20px]  xl:right-[100%] 
+            left-[10%] lg-1:left-auto
+             top-0 sm:top-[10px] lg-1:top-[-20px]  lg-1:right-[90%] 
              3xl:right-[80%]
             h-24 w-24 sm:h-40 md:h-52 lg:h-60 sm:w-40 md:w-52 lg:w-60 
             5xl:w-[400px] 5xl:h-[400px] 4xl:w-[350px] 4xl:h-[350px]
@@ -152,7 +152,7 @@ const AboutHome = () => {
             <p
               className={`
                 pt-28  
-                xl:pt-0   text-white  
+                lg-1:pt-0   text-white  
                  text-[clamp(10px,1.05vw,30px)]
                 xl-2:text-[clamp(17px,1.15vw,30px)]
                 2xl:text-[clamp(20px,1.35vw,34px)]
@@ -161,18 +161,15 @@ const AboutHome = () => {
                text-justify  tracking-[1px]
                `}
             >
-              When you watch our debut action film, you're not just observing a
-              story—you’re entering a world that feels real. Every scene, every
-              sound, is crafted to pull you in. We focus on realistic action,
-              stunning cinematography, and performances that bring complex,
-              flawed characters to life —characters you’ll see parts of yourself
-              in. Our commitment to authenticity makes this more than just
-              entertainment. It’s a gripping, immersive experience that lingers
-              long after the credits roll.
+              The character arches have a strong influence to the viewers
+              pshyce. finding a spark resemblence within the archtypes we show
+              you . opening the pandora box of your preceptions to doubt your
+              scope of reality. A path you take that will refuse to let you go.
+              can a twisted truth still feel right?
             </p>
           </div>
           <div
-            className={`  grid   lg:hidden grid-cols-3 p-4 relative ${playfairDisplay.className} w-full   xl:h-[80vh]`}
+            className={`  grid   lg:hidden grid-cols-3 p-4 relative ${playfairDisplay.className} w-full   lg-1:h-[80vh]`}
           >
             <div
               data-aos="fade-up"
@@ -181,7 +178,7 @@ const AboutHome = () => {
             h-24 w-24 sm:h-40 md:h-52 lg:h-60 sm:w-40 md:w-52 lg:w-60 
             5xl:w-[400px] 5xl:h-[400px] 4xl:w-[350px] 4xl:h-[350px]
              3xl:w-[300px]  3xl:h-[300px]  2xl:w-[250px]  2xl:h-[250px]
-             xl:h-[350px] xl:w-[350px]
+             lg-1:h-[350px] lg-1:w-[350px]
              bg-white rounded-full flex flex-col items-center justify-center z-40"
             >
               <div
@@ -216,9 +213,9 @@ const AboutHome = () => {
                 pt-24  
                 md:px-4  
              sm:pt-40 md:pt-40 lg:pt-48
-                xl:pt-0    text-white text-[10px] sm:text-lg md:text-lg lg:text-lg 
-                xl:text-xl
-                xl:leading-[25px]
+                lg-1:pt-0    text-white text-[10px] sm:text-lg md:text-lg lg:text-lg 
+                lg-1:text-xl
+                lg-1:leading-[25px]
               2xl:text-3xl 
               2xl:leading-[50px]
               text-justify
@@ -241,7 +238,7 @@ const AboutHome = () => {
         </div>
         <div className="    w-full   lg:min-h-[70vh] flex flex-col items-center justify-center ">
           <div
-            className="       grid sm:gap-6 xl:gap-16 lg:grid-cols-3 grid-cols-1 w-full  "
+            className="       grid sm:gap-6 lg-1:gap-16 lg:grid-cols-3 grid-cols-1 w-full  "
             id="contact us"
           >
             <div
@@ -267,9 +264,9 @@ const AboutHome = () => {
                 Our approach is different. From the cutting-edge technology we
                 use to our unwavering commitment to excellence, we ensure that
                 every film we produce reflects the highest standards of
-                craftsmanship. We are proud to be the first in the region to
-                offer our films both in theaters and on our website, creating a
-                seamless viewing experience for all our fans.
+                craftsmanship. We are proud to be the one of the first in the
+                Emirates to offer our films both in theaters and on our website,
+                creating a seamless viewing experience for all our fans.
               </p>
             </div>
             <div

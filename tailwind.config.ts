@@ -11,6 +11,7 @@ export default {
       screens: {
         "custom-xl": { raw: "(min-width: 1280px) and (min-height: 720px)" },
         'xs': '520px',
+        'lg-1': '1124px',
         'xl-2': '1400px',
         '3xl': '1750px',
         '4xl': '2000px',
