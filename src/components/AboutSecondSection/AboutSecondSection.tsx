@@ -67,7 +67,7 @@ lg:mb-0 md:mb-12 mb-4
                 className="border border-gray-500 relative w-11/12 lg:w-11/12 min-h-[60vh] sm:min-h-[70vh] lg:min-h-[85vh]  bg-black  flex flex-col items-center justify-center"
                 data-aos="fade-left"
               >
-                <span className="z-[45] uppercase tracking-[20px] sm:tracking-normal absolute left-[-14%] sm:left-[-10%] lg:left-[-32%] top-1/2 transform -translate-y-1/2 text-white text-[11vw] sm:text-[8vw] 2xl:text-[9.5vw] font-semibold whitespace-nowrap [writing-mode:vertical-rl] rotate-180">
+                {/* <span className="z-[45] uppercase tracking-[20px] sm:tracking-normal absolute left-[-14%] sm:left-[-10%] lg:left-[-32%] top-1/2 transform -translate-y-1/2 text-white text-[11vw] sm:text-[8vw] 2xl:text-[9.5vw] font-semibold whitespace-nowrap [writing-mode:vertical-rl] rotate-180">
                   <span className="text-transparent">F</span>
                   <span>O</span>
                   <span className="text-transparent">U</span>
@@ -84,25 +84,25 @@ lg:mb-0 md:mb-12 mb-4
                   <span>D</span>
                   <span>E</span>
                   <span>R</span>
-                </span>
+                </span> */}
 
                 <img
-                  src="/assets/About-landing-1.png"
+                  src="/assets/about-us-founder.jpg"
                   alt="about 2 image"
                   className="w-full  h-full  object-cover transition-opacity duration-300 absolute    z-30"
                 />
                 <img
-                  src="/assets/About-landing-1-bw.png"
+                  src="/assets/about-us-founder.jpg"
                   alt="about image"
                   className="w-full  h-full  object-cover transition-opacity duration-300 absolute     hover:opacity-0  opacity-100 z-40"
                 />
-                <h1 className="absolute bottom-[8%] sm:bottom-[5%] left-[10%] sm:left-[2%] lg:left-[8%] 2xl:left-[8.5%] z-[41] text-[12vw] sm:text-[7.1vw] 2xl:text-[10vw]">
+                {/* <h1 className="absolute bottom-[8%] sm:bottom-[5%] left-[10%] sm:left-[2%] lg:left-[8%] 2xl:left-[8.5%] z-[41] text-[12vw] sm:text-[7.1vw] 2xl:text-[10vw]">
                   F
                 </h1>
                 <p className="font-normal w-6/12 absolute bottom-[9%] left-[22%] sm:left-[8%] lg:left-[27%] 2xl:left-[29%] leading-[7.5vw] z-[41] text-[5vw] sm:text-[2vw] 2xl:text-[3vw] 2xl:leading-[5.2vw] capitalize sm:leading-[3.5vw] ">
                   {` Locomotive 
                    Films`}
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
