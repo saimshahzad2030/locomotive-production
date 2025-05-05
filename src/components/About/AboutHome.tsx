@@ -188,9 +188,9 @@ const AboutHome = () => {
                text-justify  tracking-[1px]
                `}
             >
-              The character arches have a strong influence to the viewers
+              The character archetypes have a strong influence to the viewers
               pshyce. finding a spark resemblence within the archtypes we show
-              you . opening the pandora box of your preceptions to doubt your
+              you . Opening the pandora box of your preceptions to doubt your
               scope of reality. A path you take that will refuse to let you go.
               can a twisted truth still feel right?
             </p>
