@@ -4,7 +4,7 @@ const ContactUsForm = () => {
   return (
     <div
       data-aos="fade-left"
-      className=" w-10/12 space-y-3 p-1 border border-white rounded-sm bg-black   md:backdrop-blur-3xl shadow-[inset_0_0_20px_rgba(255,255,255,0.5)]"
+      className=" w-11/12 md:w-10/12 space-y-3 p-1 border border-white rounded-sm bg-black   md:backdrop-blur-3xl shadow-[inset_0_0_20px_rgba(255,255,255,0.5)]"
     >
       <form className="bg-white/5 space-y-3 p-6 border border-white rounded-sm bg-black   md:backdrop-blur-3xl shadow-[inset_0_0_20px_rgba(255,255,255,0.5)]">
         <h1 className="text-white w-full text-center text-lg md:text-xl lg:text-2xl">Get in Touch</h1>
